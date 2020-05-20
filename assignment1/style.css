@@ -1,0 +1,301 @@
+body {
+  margin: auto;
+}
+.main {
+  width: 500px;
+  background-color: white;
+  border: 1px solid grey;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.div1 {
+  height: 35px;
+  width: 150px;
+  background-color: rgb(243, 221, 220);
+  margin-left: 10px;
+  float: left;
+}
+
+.div2 {
+  float: right;
+  height: 35px;
+  width: 80px;
+  margin-right: 10px;
+  background-color: rgb(243, 221, 220);
+}
+
+.div3 {
+  clear: both;
+  height: 45px;
+  width: 150px;
+  background-color: rgb(243, 221, 220);
+  margin: auto;
+  margin-top: 60px;
+}
+
+.div4 {
+  height: 12px;
+  width: 40px;
+  background-color: rgb(243, 221, 220);
+  margin: auto;
+  margin-top: 5px;
+}
+
+.upper-block {
+  width: 95%;
+  background-color: rgb(243, 221, 220);
+  margin: auto;
+  margin-top: 10px;
+}
+
+.div6 {
+  display: inline-block;
+  float: left;
+  width: 90px;
+  height: 10px;
+  margin-top: 25px;
+  margin-left: 10px;
+  background-color: rgb(174, 174, 175);
+}
+
+.div7 {
+  display: inline-block;
+  float: right;
+  width: 140px;
+  height: 10px;
+  background-color: rgb(174, 174, 175);
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.div8 {
+  display: inline-block;
+  width: 180px;
+  height: 25px;
+  background-color: rgb(174, 174, 175);
+  margin-top: 16px;
+  margin-left: 15px;
+}
+
+.div9 {
+  display: inline-block;
+  width: 90px;
+  height: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: rgb(174, 174, 175);
+}
+
+.div10 {
+  float: right;
+  width: 342px;
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 17px;
+  background-color: rgb(174, 174, 175);
+}
+
+.div11 {
+  width: 130px;
+  height: 13px;
+  background-color: rgb(174, 174, 175);
+  margin-left: 115px;
+  margin-top: 30px;
+}
+
+.div12 {
+  display: inline-block;
+  width: 130px;
+  height: 35px;
+  background-color: rgb(174, 174, 175);
+  margin-left: 115px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.div13 {
+  display: inline-block;
+  width: 130px;
+  height: 15px;
+  background-color: rgb(174, 174, 175);
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+.four {
+  margin: 0;
+  padding: 0;
+}
+
+.four {
+  line-height: 0;
+}
+.div14,
+.div15,
+.div16 {
+  display: inline-block;
+  height: 25px;
+  width: 100px;
+  background-color: rgb(243, 221, 220);
+  margin-top: 30px;
+  border: 1px solid grey;
+  border-bottom: none;
+}
+
+.div14 {
+  margin-left: 10px;
+}
+.div15,
+.div16 {
+  margin-left: 5px;
+}
+
+.div17 {
+  float: right;
+  height: 15px;
+  width: 70px;
+  background-color: rgb(174, 174, 175);
+  margin-top: 35px;
+  margin-right: 10px;
+}
+
+.lower-block {
+  width: 100%;
+  background-color: rgb(243, 221, 220);
+  border-top: 1px solid grey;
+  margin-top: 0px;
+}
+
+.div18,
+.div19 {
+  height: 30px;
+  width: 150px;
+  background-color: rgb(174, 174, 175);
+  margin-top: 20px;
+}
+
+.div18 {
+  float: left;
+  margin-left: 10px;
+}
+
+.div19 {
+  float: right;
+  margin-right: 10px;
+}
+
+.div20 {
+  clear: both;
+  height: 12px;
+  width: 60px;
+  margin-top: 50px;
+  margin-left: 10px;
+  background-color: rgb(174, 174, 175);
+}
+
+.div21,
+.div22 {
+  display: inline-block;
+  background-color: rgb(174, 174, 175);
+  height: 30px;
+  width: 200px;
+  margin-top: 5px;
+}
+
+.div21 {
+  width: 400px;
+  margin-left: 10px;
+}
+
+.div22 {
+  width: 70px;
+  margin-left: 5px;
+}
+
+.div23 {
+  background-color: rgb(174, 174, 175);
+  height: 12px;
+  width: 200px;
+  margin-left: 10px;
+}
+
+.div24 {
+  background-color: rgb(174, 174, 175);
+  height: 30px;
+  width: 96%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.div25 {
+  background-color: rgb(174, 174, 175);
+  height: 12px;
+  width: 60px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.div26 {
+  background-color: rgb(174, 174, 175);
+  height: 30px;
+  width: 400px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.div27 {
+  float: right;
+  height: 12px;
+  width: 60px;
+  background-color: rgb(174, 174, 175);
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.div28 {
+  background-color: rgb(174, 174, 175);
+  height: 30px;
+  width: 400px;
+  margin-right: 10px;
+  float: right;
+  clear: both;
+  margin-top: 5px;
+}
+
+.div29 {
+  clear: both;
+  float: left;
+  height: 12px;
+  width: 60px;
+  background-color: rgb(174, 174, 175);
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.div30 {
+  clear: both;
+  height: 30px;
+  width: 400px;
+  background-color: rgb(174, 174, 175);
+  margin-top: 85px;
+  margin-left: 10px;
+}
+
+.footer-left {
+  float: left;
+  height: 10px;
+  width: 100px;
+  background-color: rgb(174, 174, 175);
+  margin-top: 5px;
+  margin-left: 80px;
+}
+
+.footer-right {
+  float: right;
+  height: 10px;
+  width: 250px;
+  background-color: rgb(174, 174, 175);
+  margin-top: 5px;
+  margin-right: 78px;
+}
