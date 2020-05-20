@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+main {
+  width: 50vw;
+  height: 100%;
+  border: 1px solid grey;
+  margin: auto;
+}
+
+nav {
+  border-top: 5px solid black;
+  position: relative;
+  padding-top: 17px;
+  background-color: orange;
+}
+
+nav h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 10px;
+}
+.first {
+  display: inline;
+  margin-top: 20px;
+}
+
+nav h3:nth-child(2) {
+  display: inline;
+  font-family: monospace;
+}
+nav a {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  position: relative;
+}
+
+header a {
+  position: absolute;
+  top: 65px;
+  left: 41%;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.message-section {
+  width: 90%;
+  height: 260px;
+  background-color: rgb(224, 224, 224);
+  margin: auto;
+  transform: translate(0, 20px);
+  position: relative;
+}
+
+.to {
+  left: 50px;
+  position: absolute;
+  top: 20px;
+}
+
+.to,
+.message {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.to input {
+  padding: 10px;
+  border: none;
+  box-shadow: darkgrey;
+}
+
+.message {
+  position: absolute;
+  top: 65px;
+  left: 10px;
+}
+.message textarea {
+  height: 83px;
+  width: 499px;
+  border: none;
+  box-shadow: darkgrey;
+}
+
+.message label {
+  vertical-align: top;
+}
+
+textarea {
+  resize: none;
+}
+
+.photo-link {
+  margin-top: 155px;
+  position: absolute;
+  left: 70px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.photo-link a {
+  color: black;
+  font-size: small;
+}
+
+.send-button {
+  position: absolute;
+  top: 200px;
+  left: 70px;
+}
+
+.send-button span {
+  background-color: rgb(192, 192, 192);
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.send-button a {
+  color: rgb(187, 187, 187);
+  padding-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.tabs {
+  margin-top: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.tabs span {
+  padding: 10px 10px 0 10px;
+  background-color: rgb(245, 245, 245);
+  text-decoration: underline;
+  line-height: 0px;
+}
+
+.tabs span:nth-child(1) {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.tabs span:nth-child(2),
+.tabs span:nth-child(3) {
+  padding-bottom: 200px;
+}
+
+.tabs span:nth-child(4) {
+  background-color: white;
+  margin-left: 200px;
+}
+
+.conversation {
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+}
+
+.number div {
+  margin-top: 20px;
+}
+
+.number div:nth-child(1) {
+  display: inline-block;
+  font-size: x-large;
+  margin-left: 10px;
+}
+.number div:nth-child(2) {
+  display: inline-block;
+  text-decoration: underline;
+  vertical-align: 10%;
+  margin-left: 10px;
+  color: rgb(187, 187, 187);
+}
+.number div:nth-child(3) {
+  display: inline-block;
+  float: right;
+  font-size: x-large;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.new-text {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+#new-text-message {
+  height: 35px;
+  width: 550px;
+  border: none;
+  box-shadow: darkgrey;
+  margin-top: 5px;
+}
+
+.new-text span {
+  vertical-align: 80%;
+  background-color: rgb(192, 192, 192);
+  margin-left: 5px;
+  padding: 8px;
+  border: none;
+}
+
+.attach-or-send span {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-size: small;
+  color: rgb(187, 187, 187);
+}
+
+.attach-or-send span:nth-child(1),
+.attach-or-send span:nth-child(3) {
+  text-decoration: underline;
+}
+
+.notification {
+  background-color: rgb(224, 224, 224);
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.notification span:nth-child(2) {
+  font-weight: bold;
+}
+
+.notification span:nth-child(4) {
+  text-decoration: underline;
+}
+
+.message-format {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.message-format span:nth-child(2) {
+  margin-left: 10px;
+  color: rgb(192, 192, 192);
+}
+
+.message-format div {
+  margin-top: 10px;
+  background-color: rgb(229, 229, 229);
+  padding: 10px;
+  width: 70%;
+}
+
+.message-format-alt {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.message-format-alt span:nth-child(1) {
+  float: right;
+  color: rgb(192, 192, 192);
+  margin-left: 10px;
+}
+
+.message-format-alt span:nth-child(2) {
+  float: right;
+}
+
+.message-format-alt div {
+  clear: both;
+  float: right;
+  margin-top: 10px;
+  background-color: rgb(229, 229, 229);
+  padding: 10px;
+  width: 70%;
+}
+
+.three {
+  clear: both;
+  margin-top: 100px;
+}
+
+.load {
+  clear: both;
+  text-align: center;
+  padding: 20px;
+  text-decoration: underline;
+  background-color: rgb(187, 187, 187);
+  width: 40%;
+  margin-top: 150px;
+  margin-left: 200px;
+}
