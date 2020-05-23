@@ -23,6 +23,11 @@ nav {
   margin-left: 10px;
 }
 
+.logout {
+  margin-left: 360px;
+  color: black;
+}
+
 .tagline {
   display: inline;
   font-weight: 100;
@@ -271,4 +276,8 @@ footer {
   background-color: black;
   color: white;
   margin-right: 3px;
+}
+
+footer {
+  margin-bottom: 20px;
 }
