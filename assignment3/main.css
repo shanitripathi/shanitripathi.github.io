@@ -9,6 +9,7 @@ main {
   border: 1px solid black;
   border-top: none;
   margin: auto;
+  border-bottom: 1px solid black;
 }
 
 nav {
@@ -177,11 +178,12 @@ a:hover {
   width: 100%;
   background-color: #fafafa;
   border-top: 1px solid #eaeaea;
+  overflow: visible;
 }
 
 .top-conversations {
   padding: 20px;
-  margin-bottom: -50px;
+  /* margin-bottom: -50px; */
 }
 
 .tc-heading {
@@ -212,11 +214,12 @@ a:hover {
 .tc-para {
   display: inline-block;
   margin-left: 10px;
-  font-weight: 100;
+  font-weight: 350;
   text-align: left;
   vertical-align: top;
   width: 620px;
   margin-top: 0;
+  font-size: medium;
 }
 
 .tc-msg-count {
@@ -227,6 +230,45 @@ a:hover {
 
 .tc-conversation {
   margin-left: 40px;
-  margin-bottom: 20px;
-  height: auto;
+  margin-bottom: 10px;
+}
+
+.all-conversations {
+  margin-top: -50px;
+}
+
+footer {
+  width: 60vw;
+  margin: auto;
+}
+
+.privacy {
+  font-size: 0.6rem;
+  color: darkslategray;
+  font-weight: 150;
+}
+
+.name {
+  font-size: 0.6rem;
+  color: darkslategray;
+  font-weight: 150;
+}
+
+.privacy-div {
+  text-align: right;
+  display: inline-block;
+
+  width: 790px;
+}
+
+.name-div {
+  display: inline-block;
+  text-align: left;
+}
+
+.tc-para-new::before {
+  content: "New";
+  background-color: black;
+  color: white;
+  margin-right: 3px;
 }
