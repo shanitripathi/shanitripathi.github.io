@@ -5,7 +5,7 @@ body {
 }
 main {
   height: 100%;
-  width: 60vw;
+  width: 870px;
   border: 1px solid black;
   border-top: none;
   margin: auto;
@@ -172,6 +172,7 @@ textarea {
   font-size: medium;
   border: 1px solid #eaeaea;
   border-bottom: none;
+  color: black;
 }
 
 .recent {
@@ -189,6 +190,7 @@ textarea {
   margin-left: 230px;
   text-decoration: underline;
   vertical-align: -5px;
+  color: black;
 }
 
 .conversations {
@@ -200,7 +202,6 @@ textarea {
 
 .top-conversations {
   padding: 20px;
-  /* margin-bottom: -50px; */
 }
 
 .tc-heading {
@@ -246,7 +247,7 @@ textarea {
 }
 
 .tc-conversation {
-  margin-left: 40px;
+  margin-left: 10px;
   margin-bottom: 10px;
 }
 
@@ -286,9 +287,9 @@ footer {
   content: "New";
   background-color: black;
   color: white;
-  font-size: smaller;
+  font-size: 0.6rem;
   margin-right: 3px;
-  padding: 3px;
+  padding: 1px;
 }
 
 footer {
