@@ -28,10 +28,9 @@ nav {
   color: black;
 }
 
-a:visited {
-  color: mediumturquoise;
+a:hover {
+  color: brown;
 }
-
 .tagline {
   display: inline;
   font-weight: 100;
@@ -64,7 +63,7 @@ a:visited {
 }
 
 .to-block {
-  margin-left: 54px;
+  margin-left: 57px;
 }
 
 #text-input {
@@ -110,13 +109,14 @@ textarea {
 #textarea-input {
   border-radius: 3px;
   border-color: grey;
-  border: 1px solid black;
+  border: 1px solid #c3c3c3;
   outline: none;
 }
 
 #text-input:focus,
 #textarea-input:focus {
   border-color: darkgrey;
+  box-shadow: 0 0 5px 0 darkcyan;
 }
 
 .photo-link {
@@ -146,16 +146,17 @@ textarea {
   font-weight: 200;
 }
 
-a:hover {
-  color: burlywood;
-}
-
 /* a:visited {
   color: white;
 } */
 
 .lower-box {
   margin-top: 70px;
+}
+
+.tabs {
+  display: inline-block;
+  margin-bottom: -1px;
 }
 
 .recent,
@@ -167,7 +168,7 @@ a:hover {
   text-decoration: underline;
   margin-left: 5px;
   text-align: center;
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
   font-size: medium;
   border: 1px solid #eaeaea;
   border-bottom: none;
@@ -177,15 +178,22 @@ a:hover {
   margin-left: 20px;
 }
 
+.all {
+  background-color: #f5f5f5;
+  text-decoration: none;
+
+  height: 21px;
+}
+
 .change-password {
-  margin-left: 270px;
+  margin-left: 230px;
   text-decoration: underline;
-  vertical-align: -10px;
+  vertical-align: -5px;
 }
 
 .conversations {
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   border-top: 1px solid #eaeaea;
   overflow: visible;
 }
@@ -202,7 +210,7 @@ a:hover {
 
 .num-count {
   display: inline-block;
-  text-align: center;
+  text-align: right;
   width: 150px;
 }
 
@@ -278,7 +286,9 @@ footer {
   content: "New";
   background-color: black;
   color: white;
+  font-size: smaller;
   margin-right: 3px;
+  padding: 3px;
 }
 
 footer {
