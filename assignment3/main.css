@@ -28,6 +28,10 @@ nav {
   color: black;
 }
 
+a:visited {
+  color: mediumturquoise;
+}
+
 .tagline {
   display: inline;
   font-weight: 100;
@@ -262,8 +266,7 @@ footer {
 .privacy-div {
   text-align: right;
   display: inline-block;
-
-  width: 790px;
+  width: 795px;
 }
 
 .name-div {
