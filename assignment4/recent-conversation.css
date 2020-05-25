@@ -1,0 +1,364 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+main {
+  width: 50vw;
+  height: 100%;
+  border: 1px solid grey;
+  margin: auto;
+}
+
+nav {
+  border-top: 5px solid black;
+  position: relative;
+  padding-top: 17px;
+  color: black;
+}
+
+nav h3 {
+  padding-left: 10px;
+}
+.first {
+  display: inline;
+  margin-top: 20px;
+}
+
+nav h3:nth-child(2) {
+  display: inline;
+  margin-left: -10px;
+}
+nav a {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: black;
+}
+
+header h1 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+header {
+  position: relative;
+}
+
+header a {
+  position: absolute;
+  top: 65px;
+  left: 41%;
+  color: black;
+}
+
+.message-section {
+  width: 90%;
+  height: 260px;
+  background-color: rgb(224, 224, 224);
+  margin: auto;
+  transform: translate(0, 20px);
+  position: relative;
+}
+
+.to {
+  left: 50px;
+  position: absolute;
+  top: 20px;
+}
+
+.to input {
+  padding: 10px;
+  border: none;
+  box-shadow: darkgrey;
+}
+
+.message {
+  position: absolute;
+  top: 65px;
+  left: 10px;
+}
+.message textarea {
+  height: 83px;
+  width: 499px;
+  border: none;
+  box-shadow: darkgrey;
+}
+
+.message label {
+  vertical-align: top;
+}
+
+textarea {
+  resize: none;
+}
+
+.photo-link {
+  margin-top: 155px;
+  position: absolute;
+  left: 70px;
+}
+
+.photo-link a {
+  color: black;
+  font-size: small;
+}
+
+.send-button {
+  position: absolute;
+  top: 200px;
+  left: 70px;
+}
+
+.send-button span {
+  background-color: rgb(192, 192, 192);
+  padding: 10px;
+}
+
+.send-button a {
+  color: rgb(187, 187, 187);
+  padding-left: 20px;
+}
+
+.tabs {
+  margin-top: 50px;
+  line-height: 0;
+  margin-bottom: -2px;
+}
+
+.tabs {
+  display: inline-block;
+  margin-bottom: -1px;
+}
+
+.recent,
+.all,
+.photos {
+  display: inline-block;
+  height: 20px;
+  background-color: #fafafa;
+  text-decoration: underline;
+  margin-left: 5px;
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+  font-size: medium;
+  border: 1px solid #aaaaaa;
+  border-bottom: none;
+  color: black;
+}
+
+.recent {
+  margin-left: 20px;
+  height: 21px;
+  background-color: #f5f5f5;
+  text-decoration: none;
+}
+
+.change-password {
+  margin-left: 90px;
+  text-decoration: underline;
+  vertical-align: -5px;
+  color: black;
+}
+
+.photos {
+  text-decoration: underline;
+}
+
+.tabs div {
+  position: relative;
+  padding: 10px;
+  padding-top: 15px;
+  background-color: rgb(245, 245, 245);
+  text-decoration: underline;
+  line-height: 0;
+  display: inline-block;
+  padding-bottom: 15px;
+  margin-bottom: 2px;
+}
+
+.tabs div:nth-child(1) {
+  text-decoration: none;
+  margin-left: 10px;
+  border-bottom: none;
+  margin-bottom: -2px;
+}
+
+.tabs div:nth-child(4) {
+  background-color: white;
+  margin-left: 160px;
+}
+
+.conversation {
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  border-top: 1px solid grey;
+  padding-bottom: 50px;
+  z-index: -1;
+}
+
+.number div {
+  margin-top: 20px;
+}
+
+.number div:nth-child(1) {
+  display: inline-block;
+  font-size: x-large;
+  margin-left: 10px;
+}
+.number div:nth-child(2) {
+  display: inline-block;
+  text-decoration: underline;
+  vertical-align: 10%;
+  margin-left: 10px;
+  color: rgb(187, 187, 187);
+}
+.number div:nth-child(3) {
+  display: inline-block;
+  float: right;
+  font-size: x-large;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.new-text {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+#new-text-message {
+  height: 35px;
+  width: 550px;
+  border: none;
+  box-shadow: darkgrey;
+  margin-top: 5px;
+}
+
+.new-text span {
+  vertical-align: 80%;
+  background-color: rgb(192, 192, 192);
+  margin-left: 5px;
+  padding: 8px;
+  border: none;
+}
+
+.attach-or-send span {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-size: small;
+  color: rgb(187, 187, 187);
+}
+
+.attach-or-send span:nth-child(1),
+.attach-or-send span:nth-child(3) {
+  text-decoration: underline;
+}
+
+.notification {
+  background-color: rgb(224, 224, 224);
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.notification span:nth-child(2) {
+  font-weight: bold;
+}
+
+.notification span:nth-child(4) {
+  text-decoration: underline;
+}
+
+.messaging {
+  text-align: left;
+}
+
+.newtext-left {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.newtext-left .context {
+  background-color: rgb(229, 229, 229);
+  position: relative;
+  margin-right: 100px;
+}
+
+.newtext-left .square {
+  position: absolute;
+  bottom: 100%;
+  height: 10px;
+  width: 10px;
+  top: -5px;
+  left: 20px;
+  background-color: rgb(229, 229, 229);
+  transform: rotate(45deg);
+}
+
+.sent-text {
+  padding: 20px;
+}
+
+.newtext-right {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.newtext-right .square {
+  position: absolute;
+  bottom: 100%;
+  height: 10px;
+  width: 10px;
+  top: -5px;
+  right: 20px;
+  background-color: rgb(229, 229, 229);
+  transform: rotate(45deg);
+}
+
+.newtext-right .context {
+  background-color: rgb(229, 229, 229);
+  position: relative;
+  margin-left: 100px;
+  text-align: left;
+}
+
+.phone {
+  font-weight: bold;
+}
+
+.date {
+  color: #c5c5c5;
+  margin-left: 5px;
+}
+
+.load {
+  text-align: center;
+  background-color: rgb(224, 224, 224);
+  padding: 25px;
+  margin: 50px 120px 0px 120px;
+}
+
+.load div:nth-child(1) {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.load div:nth-child(2) {
+  font-size: medium;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 357px;
+  font-size: x-small;
+}
+
+.security {
+  display: inline-block;
+  font-size: x-small;
+  margin-left: 300px;
+  padding-bottom: 20px;
+}
