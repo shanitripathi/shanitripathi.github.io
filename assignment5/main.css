@@ -1,0 +1,29 @@
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.web-name {
+  font-size: 1.8rem;
+}
+
+.navbar-custom {
+  background-color: #dedede;
+  border-bottom: 1px solid #e2e3e2;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #5ccecd;
+  border-bottom: 2px solid #5ccecd;
+}
+
+.intro {
+  height: 700px;
+  width: 100%;
+  background-color: #f0f1f3;
+  display: flex;
+  align-items: center;
+}
