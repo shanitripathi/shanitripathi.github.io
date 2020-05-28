@@ -20,17 +20,20 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     <title>Hello, world!</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg  p-4 navbar-custom ">
-        <svg class="bi bi-person-square ml-4" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-            <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-          </svg>
+        
       <a class="navbar-brand ml-2 large font-weight-bold web-name" href="#"
-        >MEET ME</a
+        > <svg class="bi bi-person-square ml-4 mr-2 pb-1" width=".9em" height=".9em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+          <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>MEET ME</a
       >
       <button
         class="navbar-toggler"
@@ -43,7 +46,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarNavDropdown ">
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto ">
             <li class="nav-item pl-4">
                 <a class="nav-link" href="#">HOME</a>
@@ -65,14 +68,56 @@
         </ul>
       </div>
     </nav>
+
     <section >
-        <div class="intro">
-            <div class="name-intro ml-4 ">
-                <h1 class="font-weight-light  ">RUBEN <span class="d-block font-weight-bold mb-3 ">BARSAMIAN</span></h1>
-                <h3 class="mb-0 font-weight-light">User friendly and <h3 class="break-text font-weight-light mb-4">inspiring Web Experiences.</h3></h3>
-                <a href="#">ABOUT ME -></a>
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col front-heading-div pr-0 d-flex align-items-center">
+            <div class="name-intro">
+              <h1 class="mb-0 display-3" >RUBEN</h1>
+              <h1 class="display-3 font-weight-bold">BARSAMIAN</h1>
+              <h3 class="mb-0 font-weight-light">User friendly and inspiring</h3>
+              <h3 class="font-weight-light">Web experiences.</h3>
+              <a href="#">ABOUT ME <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
+           
+          </div>
+          <div class="col px-0" >
+            <img src="/frontpic.jpeg "  class="img-fluid" height="700px" width=100% alt="">
+          </div>
         </div>
+      </div>
     </section>
+    <section class="about-me-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col d-flex bg-danger justify-content-center">
+            <div class="about-me-div">
+              <h3 class="mb-0">Lorem ipsum dolor sit amet.</h3>
+              <div class="about-with-line">
+                <h2>ABOUT ME</h2>
+                <div class="line-one"></div>
+                <div class="sm-square-one"></div>
+                <div class="sm-square-two"></div>
+                <div class="line-two"></div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>

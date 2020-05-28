@@ -1,9 +1,14 @@
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans";
+  font-weight: 900;
 }
 
 .web-name {
   font-size: 1.8rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-custom {
@@ -20,10 +25,66 @@ a:hover {
   border-bottom: 2px solid #5ccecd;
 }
 
-.intro {
-  height: 700px;
-  width: 100%;
-  background-color: #f0f1f3;
-  display: flex;
-  align-items: center;
+.front-heading-div {
+  background-color: #f1f1f1;
+}
+
+@media only screen and (max-width: 768px) {
+  .name-intro h1 {
+    font-size: 1.5rem;
+  }
+  .name-intro h3 {
+    font-size: 1rem;
+  }
+  .name-intro a {
+    font-size: 0.6rem;
+  }
+}
+
+.about-with-line {
+  position: relative;
+}
+.about-with-line div {
+  position: absolute;
+}
+
+.line-one,
+.line-two {
+  height: 40px;
+  width: 40px;
+  border-bottom: 1px solid #bfbfc1;
+  top: 5px;
+}
+
+.line-one {
+  left: 15px;
+}
+
+.line-two {
+  left: 95px;
+}
+
+.sm-square-one,
+.sm-square-two {
+  height: 5px;
+  width: 5px;
+  background-color: cornflowerblue;
+  top: 42px;
+}
+
+.sm-square-one {
+  left: 65px;
+}
+
+.sm-square-two {
+  left: 75px;
+}
+
+.about-me-div h3 {
+  margin-left: -70px;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.about-me-div {
+  margin-top: 100px;
 }
