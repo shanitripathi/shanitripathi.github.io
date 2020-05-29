@@ -1,6 +1,6 @@
 body {
   font-family: "Work Sans";
-  font-weight: 900;
+  font-weight: 350;
 }
 
 .web-name {
@@ -50,10 +50,10 @@ a:hover {
 
 .line-one,
 .line-two {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-bottom: 1px solid #bfbfc1;
-  top: 5px;
+  top: -5px;
 }
 
 .line-one {
@@ -73,18 +73,195 @@ a:hover {
 }
 
 .sm-square-one {
-  left: 65px;
+  left: 72px;
 }
 
 .sm-square-two {
-  left: 75px;
+  left: 82px;
 }
 
-.about-me-div h3 {
-  margin-left: -70px;
-  font-weight: 300;
-  font-size: 1.5em;
-}
 .about-me-div {
   margin-top: 100px;
+}
+
+.big-para {
+  font-size: 1.7em;
+}
+
+.not-bold {
+  font-weight: 200;
+}
+
+.grey-color {
+  color: #b1b1b1;
+}
+
+.logo-size {
+  font-size: 50px;
+}
+
+.light-bold {
+  font-weight: 400;
+}
+
+.row-spacing {
+  margin-top: 50px;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-line {
+  height: 15px;
+  width: 80px;
+  border-bottom: 2px solid black;
+  position: absolute;
+
+  left: 25px;
+}
+
+.graphic-design .logo-line,
+.programming .logo-line {
+  left: 45px;
+}
+
+.btn {
+  height: 50px;
+  width: 300px;
+  font-size: 1.1em;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  color: skyblue;
+  border-color: skyblue;
+}
+
+.bottom-spacing {
+  margin-bottom: 100px;
+}
+
+.project-div .line-one {
+  left: 50px;
+}
+.project-div .line-two {
+  left: 130px;
+}
+.project-div .sm-square-one {
+  left: 118px;
+}
+
+.project-div .sm-square-two {
+  left: 107px;
+}
+
+.bg-grey {
+  background-color: #eaebed;
+}
+
+.image-div {
+  position: relative;
+}
+
+.project-title {
+  position: absolute;
+  left: 105%;
+  top: 70%;
+  min-width: 280px;
+}
+
+.project-line-design {
+  position: absolute;
+  top: -65%;
+  right: 144%;
+}
+
+.project-line-design div {
+  position: absolute;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 1cm;
+
+  border: 4px solid skyblue;
+}
+
+.big-line {
+  height: 20px;
+  width: 140px;
+  border: 1px solid grey;
+  border-left: none;
+  border-bottom: none;
+  top: 7px;
+  left: 14px;
+}
+
+.bottom-line {
+  height: 5px;
+  width: 57px;
+  background-color: #4f5b67;
+  top: 25px;
+  left: 125px;
+}
+
+.image-div-left {
+  margin-top: 300px;
+  margin-left: 150px;
+}
+
+.image-div-right {
+  margin-top: 90px;
+  margin-right: 50px;
+}
+
+/* right project display */
+.image-div-right {
+  position: relative;
+}
+
+.project-title-right {
+  position: absolute;
+  right: 105%;
+  bottom: 65%;
+  min-width: 280px;
+}
+
+.project-line-design-right {
+  position: absolute;
+  bottom: 165%;
+  left: 144%;
+}
+
+.project-line-design-right div {
+  position: absolute;
+}
+
+.circle-right {
+  height: 15px;
+  width: 15px;
+  border-radius: 1cm;
+
+  border: 4px solid skyblue;
+}
+
+.big-line-right {
+  height: 20px;
+  width: 140px;
+  border: 1px solid grey;
+  border-bottom: none;
+  border-right: none;
+  bottom: -26px;
+  right: 0px;
+}
+
+.bottom-line-right {
+  height: 5px;
+  width: 57px;
+  background-color: #4f5b67;
+  top: 25px;
+  right: 112px;
 }
