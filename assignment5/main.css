@@ -319,10 +319,12 @@ a:hover {
 .loader {
   border: 10px solid white; /* Light grey */
   border-top: 10px solid #cccccc;
+  border-left: 10px solid #cccccc;
+  border-bottom: 10px solid #cccccc;
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  animation: spin 2s linear infinite;
+  animation: spin 3s linear infinite;
 }
 
 @keyframes spin {
@@ -332,6 +334,23 @@ a:hover {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.animation {
+  position: relative;
+}
+
+.percent {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+.skill-name-about {
+  vertical-align: 80px;
+}
+.skill-right .percent {
+  right: 20%;
 }
 
 .contact-icon-size {
