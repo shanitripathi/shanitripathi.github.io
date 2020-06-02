@@ -270,6 +270,10 @@ a:hover {
   margin-top: 220px;
 }
 
+.margin-fixed {
+  margin: initial;
+}
+
 .skill-name-about {
   max-width: 670px;
 }
