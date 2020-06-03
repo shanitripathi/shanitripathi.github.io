@@ -1,0 +1,7 @@
+@import "settings";
+@import "navbar";
+
+body {
+  background-color: $primary-color;
+  min-height: 500px;
+}

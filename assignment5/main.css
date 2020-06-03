@@ -20,6 +20,10 @@ a {
   color: black;
 }
 
+.meet-me-link {
+  border-bottom: 2px solid #dedede;
+}
+
 a:hover {
   color: #5ccecd;
   border-bottom: 2px solid #5ccecd;
@@ -70,6 +74,40 @@ a:hover {
   width: 5px;
   background-color: cornflowerblue;
   top: 42px;
+}
+
+.line-container {
+  width: 100%;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.left-line,
+.right-line {
+  width: 50px;
+  height: 1px;
+  background-color: black;
+  position: relative;
+}
+
+.left-line::after,
+.right-line::before {
+  content: " ";
+  background-color: red;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.right-line::before {
+  left: -10px;
+}
+
+.right-line {
+  margin-left: 20px;
 }
 
 .sm-square-one {
@@ -162,11 +200,11 @@ a:hover {
 }
 
 .image-div {
-  position: relative;
+  /* position: relative; */
 }
 
 .project-title {
-  position: absolute;
+  /* position: absolute; */
   left: 105%;
   top: 70%;
   min-width: 280px;
@@ -208,9 +246,109 @@ a:hover {
   left: 125px;
 }
 
-.image-div-left {
+.image-design {
   margin-top: 300px;
   margin-left: 150px;
+
+  position: relative;
+}
+
+.design-text {
+  position: absolute;
+  bottom: 20%;
+  right: -160px;
+}
+
+.design-line-container {
+  position: relative;
+  background-color: brown;
+  width: 100%;
+}
+
+.design-line {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: brown;
+  top: -10px;
+}
+
+.design-line::after {
+  content: " ";
+  width: 150px;
+  height: 30px;
+  border: 1px solid grey;
+  position: absolute;
+  bottom: 5px;
+  right: 50%;
+  border-bottom: none;
+  border-left: none;
+}
+
+.design-line::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 3px solid skyblue;
+  border-radius: 10cm;
+  position: absolute;
+  top: -35px;
+  left: -135px;
+}
+
+.image-design-right {
+  margin-right: 50px;
+  margin-top: 80px;
+  
+}
+
+.design-text-right {
+  position: absolute;
+  top: 20%;
+
+  left: -50px;
+}
+
+.design-line-container-right {
+  position: relative;
+  background-color: brown;
+  width: 100%;
+  right: 0;
+  margin-bottom: 10px;
+}
+
+.design-line-right {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: brown;s
+  top: -10px;
+  right: 0;
+}
+
+.design-line-right::after {
+  content: " ";
+  width: 150px;
+  height: 30px;
+  border: 1px solid grey;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  border-bottom: none;
+  border-right: none;
+}
+
+.design-line-right::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 3px solid skyblue;
+  border-radius: 10cm;
+  position: absolute;
+  top: -35px;
+  right: -135px;
 }
 
 .image-div-right {
