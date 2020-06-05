@@ -1,7 +1,12 @@
 @import "settings";
+@import "mixins";
 @import "navbar";
+@import "main-carousel";
 
-body {
-  background-color: $primary-color;
-  min-height: 500px;
+.container-fluid {
+  padding: 0;
+}
+
+p {
+  font-size: small;
 }

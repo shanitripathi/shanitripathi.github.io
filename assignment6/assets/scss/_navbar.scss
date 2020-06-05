@@ -1,3 +1,54 @@
-.navbar {
+.navbar-red,
+.navbar-container {
   background-color: $primary-color;
+}
+
+.fab {
+  color: white;
+  background-color: $primary-color;
+  font-size: 0.7rem;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  box-shadow: 0 0 5px 0 grey;
+  margin-left: -5px;
+}
+
+.nav-drop {
+  a {
+    font-size: $icon-size;
+    color: white !important;
+    background-color: $primary-color;
+  }
+  div {
+    background-color: $primary-color;
+    padding: 0;
+  }
+}
+
+.nav-drop:hover {
+  a {
+    color: black !important;
+  }
+}
+
+.nav-btn {
+  font-size: $icon-size;
+  background-color: $primary-color;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 0;
+}
+.nav-btn:hover {
+  background-color: white;
+  color: black;
+  border: none;
+  font-weight: 700;
+}
+
+.email-phone-container {
+  font-size: $icon-size;
+  color: whitesmoke;
 }

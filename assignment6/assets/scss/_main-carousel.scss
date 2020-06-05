@@ -1,0 +1,117 @@
+.carousel-inner {
+  img {
+    filter: brightness(50%);
+  }
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.carousel-caption {
+  h5 {
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0;
+    line-height: 0.9;
+  }
+
+  p {
+    line-height: 3;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  border: 1px solid white;
+  border-color: white;
+  width: 60px;
+  height: 40px;
+  top: 50%;
+  margin-right: 10px;
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  margin-left: 10px;
+}
+
+.carousel-control-prev::after {
+  content: "PRE";
+  color: white;
+  font-size: $icon-size;
+  margin-left: -20px;
+}
+
+.carousel-control-prev::before {
+  content: "<";
+  color: white;
+  font-size: small;
+  margin-bottom: 4px;
+}
+
+.carousel-control-next::after {
+  content: ">";
+  color: white;
+  font-size: small;
+  vertical-align: bottom;
+}
+
+.carousel-control-next::before {
+  content: "Next";
+  color: white;
+  font-size: $icon-size;
+  margin-right: -20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: $primary-color;
+}
+
+.title-area {
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline;
+    margin-right: 30px;
+  }
+}
+
+.selector {
+  position: relative;
+}
+
+.selector::after {
+  content: "|";
+  position: absolute;
+  right: -20px;
+  font-size: $icon-size;
+  bottom: 0;
+  color: $primary-color;
+}
+
+.red-btn {
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  padding: 0;
+  font-size: small;
+  font-weight: 400;
+}
+
+.red-btn:hover {
+  background-color: $primary-color;
+  color: white;
+}
+// .title-area {
+//   @include list-style;
+// }

@@ -1,10 +1,169 @@
-.navbar {
-  background-color: green;
+.navbar-red,
+.navbar-container {
+  background-color: #f55650;
 }
 
-body {
-  background-color: green;
-  min-height: 500px;
+.fab {
+  color: white;
+  background-color: #f55650;
+  font-size: 0.7rem;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  box-shadow: 0 0 5px 0 grey;
+  margin-left: -5px;
+}
+
+.nav-drop a {
+  font-size: 0.7rem;
+  color: white !important;
+  background-color: #f55650;
+}
+.nav-drop div {
+  background-color: #f55650;
+  padding: 0;
+}
+
+.nav-drop:hover a {
+  color: black !important;
+}
+
+.nav-btn {
+  font-size: 0.7rem;
+  background-color: #f55650;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 0;
+}
+
+.nav-btn:hover {
+  background-color: white;
+  color: black;
+  border: none;
+  font-weight: 700;
+}
+
+.email-phone-container {
+  font-size: 0.7rem;
+  color: whitesmoke;
+}
+
+.carousel-inner img {
+  filter: brightness(50%);
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.carousel-caption h5 {
+  font-size: 3.5rem;
+  padding: 0;
+  margin: 0;
+  line-height: 0.9;
+}
+.carousel-caption p {
+  line-height: 3;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  border: 1px solid white;
+  border-color: white;
+  width: 60px;
+  height: 40px;
+  top: 50%;
+  margin-right: 10px;
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  margin-left: 10px;
+}
+
+.carousel-control-prev::after {
+  content: "PRE";
+  color: white;
+  font-size: 0.7rem;
+  margin-left: -20px;
+}
+
+.carousel-control-prev::before {
+  content: "<";
+  color: white;
+  font-size: small;
+  margin-bottom: 4px;
+}
+
+.carousel-control-next::after {
+  content: ">";
+  color: white;
+  font-size: small;
+  vertical-align: bottom;
+}
+
+.carousel-control-next::before {
+  content: "Next";
+  color: white;
+  font-size: 0.7rem;
+  margin-right: -20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #f55650;
+}
+
+.title-area ul {
+  list-style: none;
+}
+.title-area li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.selector {
+  position: relative;
+}
+
+.selector::after {
+  content: "|";
+  position: absolute;
+  right: -20px;
+  font-size: 0.7rem;
+  bottom: 0;
+  color: #f55650;
+}
+
+.red-btn {
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  padding: 0;
+  font-size: small;
+  font-weight: 400;
+}
+
+.red-btn:hover {
+  background-color: #f55650;
+  color: white;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+p {
+  font-size: small;
 }
 
 /*# sourceMappingURL=main.css.map */
