@@ -11,7 +11,7 @@
 
 .carousel-caption {
   h5 {
-    font-size: 3.5rem;
+    font-size: 4vw;
     padding: 0;
     margin: 0;
     line-height: 0.9;
@@ -81,7 +81,13 @@
   }
   li {
     display: inline;
-    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+
+.title-area {
+  li:nth-child(1) {
+    margin-left: 0px;
   }
 }
 
@@ -94,7 +100,8 @@
   position: absolute;
   right: -20px;
   font-size: $icon-size;
-  bottom: 0;
+  bottom: 50%;
+  transform: translate(0, 50%);
   color: $primary-color;
 }
 
@@ -115,3 +122,67 @@
 // .title-area {
 //   @include list-style;
 // }
+
+.opening-container {
+  position: relative;
+}
+
+.qualities {
+  margin-top: 600px;
+  box-shadow: 0 0 5px grey;
+  position: absolute;
+  left: 150px;
+  right: 150px;
+  top: 0;
+  transform: translate(0, -50%);
+  background-color: white;
+}
+
+.quality-attr,
+.quality-attr-3 {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  background-color: white;
+}
+
+.quality-attr::after {
+  content: " ";
+  height: 170px;
+  width: 170px;
+  border-right: 1px solid $primary-color;
+  position: absolute;
+  right: -45%;
+}
+
+@media only screen and (max-width: 768px) {
+  .quality-attr::after {
+    border: none;
+    border-bottom: 1px solid $primary-color;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.quality-icons {
+  font-size: 2rem;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-top: 7px;
+}
+
+.quality-attr {
+  h6 {
+    font-weight: 600;
+  }
+}

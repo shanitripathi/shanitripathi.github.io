@@ -52,3 +52,43 @@
   font-size: $icon-size;
   color: whitesmoke;
 }
+
+.navbar-2 {
+  .nav-item {
+    font-size: 0.9rem;
+  }
+}
+
+.navbar-2-container {
+  margin-top: -600px;
+}
+
+.navbar-2 {
+  .nav-link,
+  button {
+    color: white !important;
+  }
+}
+
+.navbar-2 {
+  .nav-link:hover,
+  button:hover {
+    color: $primary-color !important;
+    border-bottom: 1px solid $primary-color;
+  }
+  button:hover {
+    border-bottom: none;
+  }
+}
+
+.navbar-2 {
+  .selector::after {
+    color: white;
+  }
+}
+
+.navbar-2 {
+  li {
+    margin-left: 30px;
+  }
+}

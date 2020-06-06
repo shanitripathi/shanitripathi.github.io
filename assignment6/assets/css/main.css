@@ -50,6 +50,36 @@
   color: whitesmoke;
 }
 
+.navbar-2 .nav-item {
+  font-size: 0.9rem;
+}
+
+.navbar-2-container {
+  margin-top: -600px;
+}
+
+.navbar-2 .nav-link,
+.navbar-2 button {
+  color: white !important;
+}
+
+.navbar-2 .nav-link:hover,
+.navbar-2 button:hover {
+  color: #f55650 !important;
+  border-bottom: 1px solid #f55650;
+}
+.navbar-2 button:hover {
+  border-bottom: none;
+}
+
+.navbar-2 .selector::after {
+  color: white;
+}
+
+.navbar-2 li {
+  margin-left: 30px;
+}
+
 .carousel-inner img {
   filter: brightness(50%);
 }
@@ -60,7 +90,7 @@
 }
 
 .carousel-caption h5 {
-  font-size: 3.5rem;
+  font-size: 4vw;
   padding: 0;
   margin: 0;
   line-height: 0.9;
@@ -127,7 +157,11 @@
 }
 .title-area li {
   display: inline;
-  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.title-area li:nth-child(1) {
+  margin-left: 0px;
 }
 
 .selector {
@@ -139,7 +173,8 @@
   position: absolute;
   right: -20px;
   font-size: 0.7rem;
-  bottom: 0;
+  bottom: 50%;
+  transform: translate(0, 50%);
   color: #f55650;
 }
 
@@ -156,6 +191,67 @@
 .red-btn:hover {
   background-color: #f55650;
   color: white;
+}
+
+.opening-container {
+  position: relative;
+}
+
+.qualities {
+  margin-top: 600px;
+  box-shadow: 0 0 5px grey;
+  position: absolute;
+  left: 150px;
+  right: 150px;
+  top: 0;
+  transform: translate(0, -50%);
+  background-color: white;
+}
+
+.quality-attr,
+.quality-attr-3 {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  background-color: white;
+}
+
+.quality-attr::after {
+  content: " ";
+  height: 170px;
+  width: 170px;
+  border-right: 1px solid #f55650;
+  position: absolute;
+  right: -45%;
+}
+
+@media only screen and (max-width: 768px) {
+  .quality-attr::after {
+    border: none;
+    border-bottom: 1px solid #f55650;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.quality-icons {
+  font-size: 2rem;
+  color: #f55650;
+  border: 1px solid #f55650;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-top: 7px;
+}
+
+.quality-attr h6 {
+  font-weight: 600;
 }
 
 .container-fluid {
