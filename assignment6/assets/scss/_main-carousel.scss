@@ -22,57 +22,68 @@
   }
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: none;
+@media only screen and (max-width: 768px) {
+  .carousel-caption {
+    margin-top: -100px;
+  }
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  border: 1px solid white;
-  border-color: white;
-  width: 60px;
-  height: 40px;
-  top: 50%;
-  margin-right: 10px;
-  opacity: 1;
+.opening-section {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none;
+  }
+}
+
+.opening-section {
+  .carousel-control-prev,
+  .carousel-control-next {
+    border: 1px solid white;
+    border-color: white;
+    width: 60px;
+    height: 40px;
+    top: 50%;
+    margin-right: 10px;
+    opacity: 1;
+  }
 }
 
 .carousel-control-prev {
   margin-left: 10px;
 }
 
-.carousel-control-prev::after {
-  content: "PRE";
-  color: white;
-  font-size: $icon-size;
-  margin-left: -20px;
-}
+.opening-section {
+  .carousel-control-prev::after {
+    content: "PRE";
+    color: white;
+    font-size: $icon-size;
+    margin-left: -20px;
+  }
+  .carousel-control-prev::before {
+    content: "<";
+    color: white;
+    font-size: small;
+    margin-bottom: 4px;
+  }
 
-.carousel-control-prev::before {
-  content: "<";
-  color: white;
-  font-size: small;
-  margin-bottom: 4px;
-}
+  .carousel-control-next::after {
+    content: ">";
+    color: white;
+    font-size: small;
+    vertical-align: bottom;
+  }
 
-.carousel-control-next::after {
-  content: ">";
-  color: white;
-  font-size: small;
-  vertical-align: bottom;
-}
+  .carousel-control-next::before {
+    content: "Next";
+    color: white;
+    font-size: $icon-size;
+    margin-right: -20px;
+  }
 
-.carousel-control-next::before {
-  content: "Next";
-  color: white;
-  font-size: $icon-size;
-  margin-right: -20px;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  background-color: $primary-color;
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: $primary-color;
+  }
 }
 
 .title-area {
@@ -127,7 +138,7 @@
   position: relative;
 }
 
-.qualities {
+.qualities-row {
   margin-top: 600px;
   box-shadow: 0 0 5px grey;
   position: absolute;
@@ -185,4 +196,57 @@
   h6 {
     font-weight: 600;
   }
+}
+
+.about-para {
+  margin-top: 850px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.header-para {
+  font-size: $para-size;
+}
+
+.context-underline {
+  position: relative;
+}
+
+.left-line,
+.right-line {
+  width: 50px;
+  height: 1px;
+  border-bottom: 1px solid $primary-color;
+  position: absolute;
+}
+
+.left-line {
+  left: 50%;
+  margin-left: 10px;
+}
+
+.right-line {
+  right: 50%;
+}
+
+.left-line::before {
+  content: " ";
+  width: 7px;
+  height: 7px;
+  background-color: $primary-color;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(0, 50%) rotate(45deg);
+}
+
+.right-line::after {
+  content: " ";
+  width: 7px;
+  height: 7px;
+  background-color: $primary-color;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(0, 50%) rotate(45deg);
 }

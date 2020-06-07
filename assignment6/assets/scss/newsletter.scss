@@ -1,0 +1,41 @@
+.newsletter-section {
+  background-color: $primary-color;
+}
+
+.subscribe-div {
+  display: block;
+  position: relative;
+  background-color: blue;
+}
+.subscribe-div {
+  input {
+    position: absolute;
+    width: 500px;
+    height: 60px;
+    border-radius: 10cm 0cm 0cm 10cm;
+    left: 50%;
+    transform: translate(-100%, 0);
+  }
+  button {
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    border-radius: 0cm 10cm 10cm 0cm;
+    right: 50%;
+    transform: translate(100%, 0);
+    border: 1px solid black;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .subscribe-div {
+    input {
+      width: 300px;
+      left: 200px;
+    }
+    button {
+      width: 150px;
+      left: 0;
+    }
+  }
+}
