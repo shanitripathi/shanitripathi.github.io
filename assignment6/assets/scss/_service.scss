@@ -11,6 +11,8 @@
   margin-top: 30px;
   display: flex;
   align-items: center;
+  user-select: none;
+  cursor: pointer;
 }
 
 .services {
@@ -44,4 +46,13 @@
 .service-attr:hover {
   background-color: $primary-color;
   color: white;
+}
+
+.service-img {
+  img {
+    object-fit: contain;
+    object-position: center bottom;
+    width: 100%;
+    height: 100%;
+  }
 }

@@ -6,6 +6,7 @@
 @import "service";
 @import "choose-us";
 @import "newsletter";
+@import "project";
 
 .container-fluid {
   padding: 0;
@@ -13,4 +14,8 @@
 
 p {
   font-size: small;
+}
+
+body {
+  overflow-x: hidden;
 }

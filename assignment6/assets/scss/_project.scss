@@ -1,0 +1,114 @@
+.project-container {
+  margin-top: 150px;
+}
+
+.project-button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-weight: 700;
+  border-radius: 0;
+  font-size: $icon-size;
+  margin-right: 10px;
+}
+
+.project-button:hover {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+}
+
+.button-div {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .button-div {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.gallery-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 700px;
+  justify-content: center;
+  .odd {
+    position: relative;
+    img {
+      height: 420px;
+      width: 350px;
+      padding: 10px;
+      object-fit: cover;
+    }
+  }
+  .even {
+    position: relative;
+    img {
+      height: 190px;
+      width: 350px;
+      padding: 10px;
+      object-fit: cover;
+    }
+  }
+}
+
+// .odd:hover::after {
+//   content: " ";
+//   position: absolute;
+//   top: 20px;
+//   bottom: 20px;
+//   right: 20px;
+//   left: 20px;
+//   border: 1px solid white;
+//   border-left: none;
+//   border-right: none;
+// }
+// .odd:hover::before {
+//   content: " ";
+//   position: absolute;
+//   top: 15px;
+//   bottom: 15px;
+//   right: 25px;
+//   left: 25px;
+//   border: 1px solid white;
+//   border-top: none;
+//   border-bottom: none;
+// }
+
+.odd:hover {
+  .gallery-design {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    right: 25px;
+    left: 25px;
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
+  }
+  .gallery-design::after {
+    content: " ";
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: -5px;
+    left: -5px;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.odd:hover::before {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  background-color: black;
+  opacity: 0.3;
+}

@@ -362,6 +362,8 @@
   margin-top: 30px;
   display: flex;
   align-items: center;
+  user-select: none;
+  cursor: pointer;
 }
 
 .services i {
@@ -394,8 +396,16 @@
   color: white;
 }
 
+.service-img img {
+  object-fit: contain;
+  object-position: center bottom;
+  width: 100%;
+  height: 100%;
+}
+
 .choose-us-section {
   background-color: #f1f1f1;
+  padding-bottom: 100px;
 }
 
 .choose-us-col {
@@ -444,48 +454,169 @@
 }
 .newsletter-section {
   background-color: #f55650;
+  height: 300px;
 }
 
 .subscribe-div {
-  display: block;
   position: relative;
-  background-color: blue;
 }
 
 .subscribe-div input {
   position: absolute;
-  width: 500px;
-  height: 60px;
+  width: 350px;
   border-radius: 10cm 0cm 0cm 10cm;
-  left: 50%;
+  left: 55%;
   transform: translate(-100%, 0);
+  padding: 15px;
+  background-color: #393435;
+  font-size: small;
+  padding-left: 30px;
+  color: white;
+  border: none;
+  outline: none;
 }
-.subscribe-div button {
+.subscribe-div .subscribe-button {
   position: absolute;
-  width: 250px;
-  height: 60px;
+  width: 200px;
+  text-align: left;
   border-radius: 0cm 10cm 10cm 0cm;
-  right: 50%;
+  right: 45%;
   transform: translate(100%, 0);
   border: 1px solid black;
+  padding: 15px;
+  background-color: #393435;
+  font-size: small;
+  border: none;
+  border-left: 5px solid #312c2d;
+  color: #474546;
+  outline: 0 !important;
+  box-shadow: none;
+}
+.subscribe-div input::placeholder {
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
   .subscribe-div input {
-    width: 300px;
-    left: 200px;
+    width: 200px;
+    height: 40px;
   }
   .subscribe-div button {
-    width: 150px;
-    left: 0;
+    width: 100px;
+    height: 40px;
   }
 }
+.newsletter-div {
+  padding-top: 100px;
+}
+.newsletter-div h2,
+.newsletter-div p {
+  color: white;
+}
+.newsletter-div p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.project-container {
+  margin-top: 150px;
+}
+
+.project-button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-weight: 700;
+  border-radius: 0;
+  font-size: 0.7rem;
+  margin-right: 10px;
+}
+
+.project-button:hover {
+  background-color: #f55650;
+  color: white;
+  border: none;
+}
+
+.button-div {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .button-div {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+.gallery-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 700px;
+  justify-content: center;
+}
+.gallery-div .odd {
+  position: relative;
+}
+.gallery-div .odd img {
+  height: 420px;
+  width: 350px;
+  padding: 10px;
+  object-fit: cover;
+}
+.gallery-div .even {
+  position: relative;
+}
+.gallery-div .even img {
+  height: 190px;
+  width: 350px;
+  padding: 10px;
+  object-fit: cover;
+}
+
+.odd:hover .gallery-design {
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  right: 25px;
+  left: 25px;
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none;
+}
+.odd:hover .gallery-design::after {
+  content: " ";
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: -5px;
+  left: -5px;
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+}
+
+.odd:hover::before {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  background-color: black;
+  opacity: 0.3;
+}
+
 .container-fluid {
   padding: 0;
 }
 
 p {
   font-size: small;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

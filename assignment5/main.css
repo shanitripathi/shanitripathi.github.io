@@ -1,6 +1,7 @@
 body {
   font-family: "Work Sans";
   font-weight: 350;
+  overflow-x: hidden;
 }
 
 
