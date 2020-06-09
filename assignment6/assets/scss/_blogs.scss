@@ -1,0 +1,105 @@
+.blog-section {
+  background-color: #f1f1f1;
+  margin-top: 100px;
+}
+
+.blog-container {
+  padding-top: 100px;
+}
+
+.red-btn-card {
+  color: $primary-color;
+  height: auto;
+  width: auto;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.red-btn-card:hover {
+  background-color: white;
+  color: $primary-color;
+}
+
+.card-title {
+  font-size: 0.9rem;
+}
+
+.card-icons {
+  font-size: $icon-size;
+  color: #847d7d;
+}
+
+.card-body {
+  padding-bottom: 5px;
+  position: relative;
+  box-shadow: 0 0 10px lightgrey;
+}
+
+.card-body::after {
+  content: " ";
+  width: 200px;
+  height: 1px;
+  border-bottom: 1px solid #c1b6b6;
+  position: absolute;
+  top: 67%;
+}
+
+.card {
+  margin-right: -30px;
+  position: relative;
+  border-radius: 0;
+  user-select: none;
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+.card::before {
+  content: "7th March ";
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  font-size: $icon-size;
+  font-weight: 700;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  line-height: 1;
+  background-color: $primary-color;
+  top: 5px;
+  left: -10px;
+  z-index: 1;
+}
+
+.card::after {
+  content: " ";
+  position: absolute;
+  left: -10px;
+  height: 10px;
+  width: 15px;
+  background-color: $primary-color;
+  transform: rotate(-30deg);
+}
+
+.hoverable-icons {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  i {
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+  }
+}
+
+.card:hover {
+  .hoverable-icons {
+    display: block;
+  }
+  img {
+    filter: brightness(40%);
+  }
+}

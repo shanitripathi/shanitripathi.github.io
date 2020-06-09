@@ -1,0 +1,16 @@
+.achievements-section {
+  height: 200px;
+  background-image: url(/assignment6/assets/img/photography-of-book-page-1029141.jpg);
+  object-fit: cover;
+
+  .achievement {
+    margin-top: 50px;
+
+    color: white;
+    text-align: center;
+    i {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+  }
+}
