@@ -34,7 +34,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <div class="navbar-container">
         <nav
           class="navbar navbar-expand-lg navbar-light navbar-red container py-3 "
@@ -220,10 +220,10 @@
             <div class="collapse navbar-collapse text-right" id="navbarmenu">
             <ul class="navbar-nav ml-auto"> 
               <li class="nav-item selector"><a href="#" class="nav-link ">HOME</a></li>
-              <li class="nav-item  selector"><a href="#" class="nav-link">ABOUT</a></li>
-              <li class="nav-item  selector"><a href="#" class="nav-link ">SERVICE</a></li>
-              <li class="nav-item  selector"><a href="#" class="nav-link ">PROJECT</a></li>
-              <li class="nav-item  selector"><a href="#" class="nav-link ">BLOG</a></li>
+              <li class="nav-item  selector"><a href="#about" class="nav-link">ABOUT</a></li>
+              <li class="nav-item  selector"><a href="#service" class="nav-link ">SERVICE</a></li>
+              <li class="nav-item  selector"><a href="#project" class="nav-link ">PROJECT</a></li>
+              <li class="nav-item  selector"><a href="#blog" class="nav-link ">BLOG</a></li>
               <li class="nav-item  "><a href="#" class="nav-link ">CONTACT</a></li>
              
             </ul>
@@ -269,7 +269,7 @@
         </div>
       </div>
     </section>
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="container-fluid mt-5">
         <div class="row">
           <div class="col-12 col-md-6">
@@ -294,7 +294,7 @@
         </div>
       </div>
     </section>
-    <section class="service-section">
+    <section class="service-section" id="service">
       <div class="container text-center service-container">
         <h2 class="font-weight-bold">Service</h2>
         <p class="header-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tempora magnam ab, hic iste facere quam quisquam eius distinctio rem.</p>
@@ -353,7 +353,7 @@
         </div>
       </div>
     </section>
-    <section class="choose-us-section ">
+    <section class="choose-us-section " id="choose-us">
       <div class="container choose-us-container ">
         <div class="row choose-us-row">
           <div class="col-12 col-md-6 choose-us-col">
@@ -402,7 +402,7 @@
         </div>
       </div>
     </section>
-    <section class="newsletter-section">
+    <section class="newsletter-section" id="newletters">
       <div class="container newsletter-container text-center">
         <div class="newsletter-div">
           <h2>Newsletters!</h2>
@@ -414,7 +414,7 @@
         </div>
       </div>
     </section>
-    <section class="project-section">
+    <section class="project-section" id="project">
       <div class="container project-container">
         <div class="row">
           <div class="col text-center">
@@ -485,7 +485,7 @@
         </div>
       </div>
     </section>
-    <section class="blog-section pb-5">
+    <section class="blog-section pb-5" id="blog">
       <div class="container blog-container">
         <div class="row">
           <div class="col text-center">
@@ -577,7 +577,7 @@
         </div>
       </div>
     </section>
-    <section class="team-section">
+    <section class="team-section" id="team">
       <div class="container">
         <div class="row">
           <div class="col text-center">
@@ -600,59 +600,227 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="row">
-                    <div class="col image-hover-col">
+                    <div class="col-12 col-md-4 image-hover-col p-0">
                       <img class="d-block w-100 image-to-be" src="/assignment6/assets/img/second-guy.png" alt="First slide">
                       <div class="image-hover text-center">
                         <h6>FLAME</h6>
                         <p>WEB DESIGNER</p>
+                        <div class="icons-container">
                         <a class="nav-link" href="https://www.facebook.com/">
                           <i class="fab fa-facebook-f"></i
                         ></a>
                         <a class="nav-link" href="https://www.facebook.com/">
-                          <i class="fab fa-facebook-f"></i
+                          <i class="fab fa-twitter"></i
                         ></a>
                         <a class="nav-link" href="https://www.facebook.com/">
-                          <i class="fab fa-facebook-f"></i
+                          <i class="fab fa-google-plus-g"></i
                         ></a>
                         <a class="nav-link" href="https://www.facebook.com/">
-                          <i class="fab fa-facebook-f"></i
+                          <i class="fab fa-linkedin-in"></i
                         ></a><a class="nav-link" href="https://www.facebook.com/">
-                          <i class="fab fa-facebook-f"></i
+                          <i class="fab fa-vimeo-v"></i
                         ></a>
+                      </div>
 
                       </div>
                     </div>
-                    <div class="col">
-                      <img class="d-block w-100" src="/assignment6/assets/img/first-guy.png" alt="First slide">
+                    <div class="col-12 col-md-4 image-hover-col">
+                      <img class="d-block w-100 image-to-be" src="/assignment6/assets/img/first-guy.png" alt="First slide">
+                      <div class="image-hover text-center">
+                        <h6>FLAME</h6>
+                        <p>WEB DESIGNER</p>
+                        <div class="icons-container">
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-twitter"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-google-plus-g"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-linkedin-in"></i
+                        ></a><a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-vimeo-v"></i
+                        ></a>
+                        </div>    
+                      </div>
                     </div>
-                    <div class="col">
-                      <img class="d-block w-100" src="/assignment6/assets/img/second-guy.png" alt="First slide">
+                    <div class="col-12 col-md-4 image-hover-col">
+                      <img class="d-block w-100 image-to-be" src="/assignment6/assets/img/second-guy.png" alt="First slide">
+                      <div class="image-hover text-center">
+                        <h6>FLAME</h6>
+                        <p>WEB DESIGNER</p>
+                        <div class="icons-container">
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-twitter"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-google-plus-g"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-linkedin-in"></i
+                        ></a><a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-vimeo-v"></i
+                        ></a>
+                        </div>   
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="row">
-                    <div class="col">
-                      <img class="d-block w-100" src="/assignment6/assets/img/first-guy.png" alt="First slide">
+                    <div class="col-12 col-md-4 image-hover-col">
+                      <img class="d-block w-100 image-to-be" src="/assignment6/assets/img/first-guy.png" alt="First slide">
+                      <div class="image-hover text-center">
+                        <h6>FLAME</h6>
+                        <p>WEB DESIGNER</p>
+                        <div class="icons-container">
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-twitter"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-google-plus-g"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-linkedin-in"></i
+                        ></a><a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-vimeo-v"></i
+                        ></a>
+                      </div>
+
+                      </div>
                     </div>
-                    <div class="col">
-                      <img class="d-block w-100" src="/assignment6/assets/img/second-guy.png" alt="First slide">
+                    <div class="col-12 col-md-4 image-hover-col">
+                      <img class="d-block w-100 image-to-be" src="/assignment6/assets/img/second-guy.png" alt="First slide">
+                      <div class="image-hover text-center">
+                        <h6>FLAME</h6>
+                        <p>WEB DESIGNER</p>
+                        <div class="icons-container">
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-twitter"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-google-plus-g"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-linkedin-in"></i
+                        ></a><a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-vimeo-v"></i
+                        ></a>
+                      </div>
+
+                      </div>
                     </div>
-                    <div class="col">
-                      <img class="d-block w-100" src="/assignment6/assets/img/first-guy.png" alt="First slide">
+                    <div class="col-12 col-md-4 image-hover-col">
+                      <img class="d-block w-100 image-to-be" src="/assignment6/assets/img/first-guy.png" alt="First slide">
+                      <div class="image-hover text-center">
+                        <h6>FLAME</h6>
+                        <p>WEB DESIGNER</p>
+                        <div class="icons-container">
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-twitter"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-google-plus-g"></i
+                        ></a>
+                        <a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-linkedin-in"></i
+                        ></a><a class="nav-link" href="https://www.facebook.com/">
+                          <i class="fab fa-vimeo-v"></i
+                        ></a>
+                      </div>
+
+                      </div>
                     </div>
                   </div>
               </div>
               <div class="carousel-item">
                 <div class="row">
-                  <div class="col">
-                    <img class="d-block w-100" src="/assignment6/assets/img/second-guy.png" alt="First slide">
+                  <div class="col-12 col-md-4 image-hover-col">
+                    <img class="d-block w-100 image-to-be" src="/assignment6/assets/img/second-guy.png" alt="First slide">
+                    <div class="image-hover text-center">
+                      <h6>FLAME</h6>
+                      <p>WEB DESIGNER</p>
+                      <div class="icons-container">
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-twitter"></i
+                      ></a>
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-google-plus-g"></i
+                      ></a>
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-linkedin-in"></i
+                      ></a><a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-vimeo-v"></i
+                      ></a>
+                      </div>
+
+                    </div>
                   </div>
-                  <div class="col">
-                    <img class="d-block w-100" src="/assignment6/assets/img/first-guy.png" alt="First slide">
+                  <div class="col-12 col-md-4 image-hover-col">
+                    <img class="d-block w-100 image-to-be" src="/assignment6/assets/img/first-guy.png" alt="First slide">
+                    <div class="image-hover text-center">
+                      <h6>FLAME</h6>
+                      <p>WEB DESIGNER</p>
+                      <div class="icons-container">
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-twitter"></i
+                      ></a>
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-google-plus-g"></i
+                      ></a>
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-linkedin-in"></i
+                      ></a><a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-vimeo-v"></i
+                      ></a>
+                    </div>
+
+                    </div>
                   </div>
-                  <div class="col">
-                    <img class="d-block w-100" src="/assignment6/assets/img/second-guy.png" alt="First slide">
+                  <div class="col-12 col-md-4 image-hover-col p-0">
+                    <img class="d-block w-100 image-to-be" src="/assignment6/assets/img/second-guy.png" alt="First slide">
+                    <div class="image-hover text-center ">
+                      <h6>FLAME</h6>
+                      <p>WEB DESIGNER</p>
+                      <div class="icons-container">
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-twitter"></i
+                      ></a>
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-google-plus-g"></i
+                      ></a>
+                      <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-linkedin-in"></i
+                      ></a><a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-vimeo-v"></i
+                      ></a>
+                    </div>
+
+                    </div>
                   </div>
                 </div>
             </div>
@@ -660,8 +828,106 @@
             </div>
           </div>
         </div>
+        <div class="row client-row">
+          <div class="col-12 text-center mb-5">
+            <h2 class="font-weight-bold">Our Happy Clients</h2>
+            <p class="header-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tempora magnam ab, hic iste facere quam quisquam eius distinctio rem.</p>
+            <div class="context-underline">
+            <div class="left-line"></div>
+            <div class="right-line"></div>
+            </div>
+          </div>
+          <div class="col-12  col-md-3 text-center mb-3">
+              <img src="/assignment6/assets/img/Screenshot 2020-06-09 at 9.24.13 p.m..png" alt="">
+          </div>
+          <div class="col-12 col-md-3 text-center mb-3">
+            <img src="/assignment6/assets/img/Screenshot 2020-06-09 at 9.23.43 p.m..png" alt="">
+          </div>
+          <div class="col-12 col-md-3 text-center mb-3">
+            <img src="/assignment6/assets/img/Screenshot 2020-06-09 at 9.23.54 p.m..png" alt="">
+          </div>
+          <div class="col-12 col-md-3 text-center mb-3">
+            <img src="/assignment6/assets/img/Screenshot 2020-06-09 at 9.24.05 p.m..png" alt="">
+          </div>
+          </div>
+        </div>
       </div>
     </section>
+    <section class="references">
+      <div class="container references-container pb-5">
+        <div class="row">
+          <div class="col-12 col-md-3 d-flex flex-column justify-content-between mb-4" >
+            <img src="/assignment6/assets/img/flame_logo.png" alt="" class="flame-footer">
+            <div class="contact-us ">
+              
+              <p>Address:11 Sycamore Drive, Dublin, Ireland</p>
+              <p>Phone:(089) 456-2230</p>
+              <p>Fax:+1(234) 567 8901</p>
+              <p>Email:support@yoursite.com</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 recent-posts d-flex flex-column justify-content-between mb-4">
+            <h4 class="h4-line">RECENT POSTS</h4>
+            <div class="designers-div">
+              <div class="designer">
+        
+                  <img src="/assignment6/assets/img/bd.png" alt="">
+          
+                
+                <div class="name-para">
+                  <h6>Responsive Design</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="designer">
+                <img src="/assignment6/assets/img/gd.png" alt="">
+                <div class="name-para">
+                  <h6>Responsive Design</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 d-flex flex-column justify-content-between mb-4">
+            <h4 class="h4-line">TAGS</h4>
+            <div class="tags-div">
+              <span>Business</span>
+              <span>Design</span>
+              <span>All</span>
+              <span>Awesome</span>
+              <span>Photography</span>
+              <span>Media</span>
+              <span>Creative</span>
+              <span>Art</span>
+              <span>html</span>
+              <span>Multipurpose</span>
+              <span>Photography</span>
+              <span>Media</span>
+              <span>Creative</span>
+              <span>Media</span>
+              <span>Creative</span>
+          
+            </div>
+          </div>
+          <div class="col-12 col-md-3 d-flex flex-column justify-content-between mb-4">
+            <h4 class="h4-line">FLICKR GALLERY</h4>
+            <div class="flickr-images-div d-flex flex-wrap">
+              <img src="/assignment6/assets/img/green-leaved-plant-in-white-pot-3148596.jpg" alt="">
+              <img src="/assignment6/assets/img/red-bus-on-road-near-big-ben-in-london-698849.jpg" alt="">
+              <img src="/assignment6/assets/img/round-multicolored-abstract-painting-2268487.jpg" alt="">
+              <img src="/assignment6/assets/img/white-step-through-bicycle-leaning-beside-tree-plant-212185.jpg" alt="">
+              <img src="/assignment6/assets/img/empty-chair-in-front-of-red-hammock-3255246.jpg" alt="">
+              <img src="/assignment6/assets/img/ancient-arch-arches-architecture-206066.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center">
+      <span>&copy;2017 flame.All Rights Perculatheme</span>
+    </footer>
+
+      <a href="#top" class="scrollbar"><i class="fas fa-angle-up"></i></a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

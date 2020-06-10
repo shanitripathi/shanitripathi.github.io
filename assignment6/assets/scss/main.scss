@@ -10,6 +10,7 @@
 @import "blogs";
 @import "achievement";
 @import "team";
+@import "references";
 
 .container-fluid {
   padding: 0;
@@ -21,4 +22,28 @@ p {
 
 body {
   overflow-x: hidden;
+}
+
+footer {
+  background-color: rgb(51, 49, 50);
+  color: white;
+  font-size: 0.7rem;
+
+  padding: 20px;
+}
+
+.scrollbar {
+  text-align: center;
+  position: fixed;
+  bottom: 45%;
+  right: 10%;
+  i {
+    color: white;
+    background-color: $primary-color;
+    font-size: 2rem;
+    padding-top: 8px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
 }
