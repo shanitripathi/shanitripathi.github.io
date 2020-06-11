@@ -89,6 +89,7 @@
     border: 1px solid white;
     border-top: none;
     border-bottom: none;
+    animation: project-animation 2s ease-out;
   }
   .gallery-design::before {
     content: "lorem bdsb iwgdai dqiuwbad awidubaw awidbaow absdba cbahjvkca sc aksc ";
@@ -144,4 +145,15 @@
 
 .btn-border:hover {
   border: none;
+}
+
+@keyframes project-animation {
+  from {
+    opacity: 0.5;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

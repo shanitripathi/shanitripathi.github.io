@@ -46,13 +46,15 @@
 .service-attr:hover {
   background-color: $primary-color;
   color: white;
+  transition: 1s;
+  transition-delay: color 1s;
 }
 
 .service-img {
   img {
-    object-fit: contain;
-    object-position: center bottom;
-    width: 100%;
+    object-fit: cover;
+    object-position: left top;
+    width: 120%;
     height: 100%;
   }
 }

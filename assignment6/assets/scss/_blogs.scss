@@ -76,10 +76,10 @@
   content: " ";
   position: absolute;
   left: -10px;
-  height: 10px;
-  width: 15px;
-  background-color: $primary-color;
-  transform: rotate(-30deg);
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid red;
+  border-left: 10px solid transparent;
 }
 
 .hoverable-icons {
@@ -98,8 +98,19 @@
 .card:hover {
   .hoverable-icons {
     display: block;
+    animation: card-animation 1s;
   }
   img {
     filter: brightness(40%);
+    animation: card-animation 2s;
+  }
+}
+
+@keyframes card-animation {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
   }
 }

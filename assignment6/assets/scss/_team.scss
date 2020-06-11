@@ -71,6 +71,16 @@
 .image-hover-col:hover {
   .image-hover {
     display: block;
+    animation: custom 1s;
+  }
+}
+
+@keyframes custom {
+  from {
+    transform: translate(0, 100%);
+  }
+  to {
+    transform: translate(0, 0%);
   }
 }
 

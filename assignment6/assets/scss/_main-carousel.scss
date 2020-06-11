@@ -1,6 +1,9 @@
-.carousel-inner {
-  img {
-    filter: brightness(50%);
+.opening-section {
+  .carousel-inner {
+    img {
+      filter: brightness(40%) !important;
+      object-fit: cover;
+    }
   }
 }
 
@@ -23,8 +26,8 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .carousel-caption {
-    margin-top: -100px;
+  .carousel-item {
+    // padding-bottom: 400px;
   }
 }
 
@@ -92,7 +95,7 @@
   }
   li {
     display: inline;
-    margin-left: 30px;
+    padding: 20px;
   }
 }
 
@@ -109,7 +112,7 @@
 .selector::after {
   content: "|";
   position: absolute;
-  right: -20px;
+  right: -4px;
   font-size: $icon-size;
   bottom: 50%;
   transform: translate(0, 50%);
@@ -151,32 +154,40 @@
 
 .quality-attr,
 .quality-attr-3 {
-  height: 200px;
-  width: 200px;
+  min-height: 200px;
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  position: relative;
   background-color: white;
 }
 
-.quality-attr::after {
+.quality {
+  position: relative;
+}
+
+.quality::after {
   content: " ";
-  height: 170px;
+  height: 80%;
   width: 170px;
   border-right: 1px solid $primary-color;
   position: absolute;
-  right: -45%;
+  right: 0;
+  bottom: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  .quality-attr::after {
+  .quality::after {
     border: none;
     border-bottom: 1px solid $primary-color;
     left: 50%;
     transform: translate(-50%, 0);
   }
+}
+
+.quality-3::after {
+  display: none;
 }
 
 .quality-icons {
