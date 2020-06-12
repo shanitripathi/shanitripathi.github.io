@@ -154,8 +154,8 @@
 
 .quality-attr,
 .quality-attr-3 {
-  min-height: 200px;
-  max-width: 200px;
+  height: 250px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,7 +170,7 @@
 .quality::after {
   content: " ";
   height: 80%;
-  width: 170px;
+  width: 80%;
   border-right: 1px solid $primary-color;
   position: absolute;
   right: 0;
@@ -181,8 +181,7 @@
   .quality::after {
     border: none;
     border-bottom: 1px solid $primary-color;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 20px;
   }
 }
 

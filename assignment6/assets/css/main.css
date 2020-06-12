@@ -207,8 +207,8 @@
 
 .quality-attr,
 .quality-attr-3 {
-  min-height: 200px;
-  max-width: 200px;
+  height: 250px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,7 +223,7 @@
 .quality::after {
   content: " ";
   height: 80%;
-  width: 170px;
+  width: 80%;
   border-right: 1px solid #f55650;
   position: absolute;
   right: 0;
@@ -234,8 +234,7 @@
   .quality::after {
     border: none;
     border-bottom: 1px solid #f55650;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 20px;
   }
 }
 .quality-3::after {
@@ -522,9 +521,9 @@
 
 @media only screen and (max-width: 768px) {
   .subscribe-div input {
-    width: 40%;
+    width: 50%;
   }
-  .subscribe-div button {
+  .subscribe-div .subscribe-button {
     width: 40%;
   }
 }
@@ -740,7 +739,7 @@
   text-align: center;
   line-height: 1;
   background-color: #f55650;
-  top: 5px;
+  top: 10px;
   left: -10px;
   z-index: 1;
 }
@@ -751,7 +750,7 @@
   left: -10px;
   width: 0;
   height: 0;
-  border-bottom: 5px solid red;
+  border-bottom: 10px solid #f55650;
   border-left: 10px solid transparent;
 }
 
@@ -795,9 +794,13 @@
   color: white;
   text-align: center;
 }
-.achievements-section .achievement i {
-  font-size: 2rem;
+.achievements-section .achievement i,
+.achievements-section .achievement h2 {
+  font-size: 2.7vw;
   margin-bottom: 5px;
+}
+.achievements-section .achievement p {
+  font-size: 1.7vw;
 }
 
 .team-section {
