@@ -59,8 +59,9 @@
   }
 }
 
-.navbar-2-container {
-  margin-top: -600px;
+.navbar-2-fluid {
+  position: absolute;
+  top: 0;
 }
 
 .navbar-2 {
@@ -90,5 +91,16 @@
 .navbar-2 {
   li {
     padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-2 {
+    .selector::after {
+      display: none;
+    }
+    .nav-item {
+      padding: 0;
+    }
   }
 }
