@@ -118,6 +118,23 @@
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .title-area {
+    ul {
+      list-style: none;
+    }
+    li {
+      display: inline;
+      padding: 10px;
+    }
+  }
+  .title-area {
+    li:nth-child(1) {
+      margin-left: -40px;
+    }
+  }
+}
+
 .selector {
   position: relative;
 }

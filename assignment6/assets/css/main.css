@@ -181,6 +181,19 @@
   margin-left: 0px;
 }
 
+@media only screen and (max-width: 576px) {
+  .title-area ul {
+    list-style: none;
+  }
+  .title-area li {
+    display: inline;
+    padding: 10px;
+  }
+
+  .title-area li:nth-child(1) {
+    margin-left: -40px;
+  }
+}
 .selector {
   position: relative;
 }
@@ -503,9 +516,15 @@
 .presentation-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
+@media only screen and (max-width: 768px) {
+  .presentation-image {
+    object-fit: cover !important;
+    height: 500px !important;
+  }
+}
 .newsletter-section {
   background-color: #f55650;
   height: 300px;
@@ -553,9 +572,11 @@
 @media only screen and (max-width: 768px) {
   .subscribe-div input {
     width: 50%;
+    font-size: 0.7rem;
   }
   .subscribe-div .subscribe-button {
     width: 40%;
+    font-size: 0.7rem;
   }
 }
 .newsletter-div {
@@ -827,13 +848,18 @@
 }
 .achievements-section .achievement i,
 .achievements-section .achievement h2 {
-  font-size: 2.7vw;
+  font-size: 2.5rem;
   margin-bottom: 5px;
 }
-.achievements-section .achievement p {
-  font-size: 1.7vw;
+@media only screen and (max-width: 768px) {
+  .achievement i,
+.achievement h2 {
+    font-size: 1.5rem !important;
+  }
+  .achievement p {
+    font-size: 0.8rem !important;
+  }
 }
-
 .team-section {
   margin-top: 100px;
 }
@@ -867,7 +893,7 @@
 
 .image-to-be {
   position: relative;
-  height: 450px;
+  height: 350px;
   width: 350px;
   object-fit: cover;
 }
@@ -904,6 +930,11 @@
   animation: custom 1s;
 }
 
+@media only screen and (max-width: 768px) {
+  .team-section .carousel-inner img {
+    height: 400px;
+  }
+}
 @keyframes custom {
   from {
     transform: translate(0, 100%);

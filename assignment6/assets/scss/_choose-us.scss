@@ -50,5 +50,12 @@
 .presentation-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .presentation-image {
+    object-fit: cover !important;
+    height: 500px !important;
+  }
 }

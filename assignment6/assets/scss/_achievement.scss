@@ -10,11 +10,22 @@
     text-align: center;
     i,
     h2 {
-      font-size: 2.7vw;
+      font-size: 2.5rem;
       margin-bottom: 5px;
     }
     p {
-      font-size: 1.7vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .achievement {
+    i,
+    h2 {
+      font-size: 1.5rem !important;
+    }
+    p {
+      font-size: 0.8rem !important;
     }
   }
 }
