@@ -45,14 +45,17 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .subscribe-div {
-    input {
-      width: 50%;
-      font-size: 0.7rem;
-    }
-    .subscribe-button {
-      width: 40%;
-      font-size: 0.7rem;
+  .newsletter-section {
+    padding-bottom: 40px;
+    .subscribe-div {
+      input {
+        width: 50%;
+        font-size: 0.7rem;
+      }
+      .subscribe-button {
+        width: 40%;
+        font-size: 0.7rem;
+      }
     }
   }
 }

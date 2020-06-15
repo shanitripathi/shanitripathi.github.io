@@ -32,110 +32,31 @@
 .gallery-div {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-between;
 
-  justify-content: center;
-  .odd {
-    position: relative;
-    img {
-      height: 420px;
-      width: 350px;
+  .sm-lg-container {
+    .odd {
+      display: flex;
+      flex: 2;
       padding: 10px;
-      object-fit: cover;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
     }
-  }
-  .even {
-    position: relative;
-    img {
-      height: 190px;
-      width: 350px;
+    .even {
+      display: flex;
+      flex: 1;
       padding: 10px;
-      object-fit: cover;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
     }
-  }
-}
-
-// .odd:hover::after {
-//   content: " ";
-//   position: absolute;
-//   top: 20px;
-//   bottom: 20px;
-//   right: 20px;
-//   left: 20px;
-//   border: 1px solid white;
-//   border-left: none;
-//   border-right: none;
-// }
-// .odd:hover::before {
-//   content: " ";
-//   position: absolute;
-//   top: 15px;
-//   bottom: 15px;
-//   right: 25px;
-//   left: 25px;
-//   border: 1px solid white;
-//   border-top: none;
-//   border-bottom: none;
-// }
-
-.odd:hover,
-.even:hover {
-  .gallery-design {
-    position: absolute;
-    top: 15px;
-    bottom: 15px;
-    right: 25px;
-    left: 25px;
-    border: 1px solid white;
-    border-top: none;
-    border-bottom: none;
-    animation: project-animation 2s ease-out;
-  }
-  .gallery-design::before {
-    content: "lorem bdsb iwgdai dqiuwbad awidubaw awidbaow absdba cbahjvkca sc aksc ";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    color: white;
-    bottom: 35%;
-    font-size: small;
-
-    font-size: $icon-size;
-  }
-  .gallery-design::after {
-    content: "UI/UX DESIGN FOR SUV";
-    font-weight: 700;
-    color: white;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 5px;
-    bottom: 5px;
-    right: -5px;
-    left: -5px;
-    border: 1px solid white;
-    border-left: none;
-    border-right: none;
-  }
-}
-
-.odd:hover::before,
-.even:hover::before {
-  content: " ";
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  right: 10px;
-  left: 10px;
-  background-color: black;
-  opacity: 0.7;
-}
-
-.even:hover {
-  .gallery-design::before {
-    bottom: 20%;
   }
 }
 
@@ -155,5 +76,16 @@
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+.btn-col {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery-div {
+    flex-direction: column;
+    height: auto;
   }
 }

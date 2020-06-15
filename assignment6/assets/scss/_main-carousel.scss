@@ -202,7 +202,7 @@
   content: " ";
   height: 80%;
   width: 80%;
-  border-right: 1px solid $primary-color;
+  border-right: 1px solid lightgrey;
   position: absolute;
   right: 0;
   bottom: 50%;
@@ -215,7 +215,7 @@
     width: 80%;
     bottom: 0;
     border: none;
-    border-bottom: 1px solid $primary-color;
+    border-bottom: 1px solid lightgray;
     left: 50%;
     transform: translate(-50%, 0);
   }
