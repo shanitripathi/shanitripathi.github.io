@@ -44,6 +44,14 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .opening-section {
+    .carousel-caption {
+      margin-top: 30px;
+    }
+  }
+}
+
 .opening-section {
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
