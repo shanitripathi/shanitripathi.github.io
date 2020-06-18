@@ -1,0 +1,112 @@
+.cover-section {
+  position: relative;
+}
+.cover-section .carousel-inner img {
+  object-fit: cover;
+  height: 750px;
+  filter: brightness(85%);
+}
+.cover-section .carousel-inner .carousel-item {
+  position: relative;
+}
+.cover-section .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  bottom: 50%;
+  transform: translate(0, 50%);
+  text-align: left;
+}
+.cover-section .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 3rem;
+}
+.cover-section .carousel-inner .carousel-item .carousel-caption .btn-cover {
+  background-color: white;
+  color: black;
+  font-size: 0.7rem;
+  padding: 12px;
+  border: none;
+}
+.cover-section .carousel-inner .carousel-item .carousel-caption .btn-cover:hover {
+  background-color: #518af6;
+  color: white;
+}
+
+.cover-section .carousel-control-prev,
+.cover-section .carousel-control-next {
+  width: 40px;
+  height: 50px;
+  top: 50%;
+  opacity: 1;
+  background-color: #9fa0a2;
+}
+.cover-section .carousel-control-prev .carousel-control-prev-icon,
+.cover-section .carousel-control-prev .carousel-control-next-icon,
+.cover-section .carousel-control-next .carousel-control-prev-icon,
+.cover-section .carousel-control-next .carousel-control-next-icon {
+  height: 10px;
+  width: 10px;
+  color: white;
+}
+.cover-section .carousel-control-next:hover,
+.cover-section .carousel-control-prev:hover {
+  background-color: #518af6;
+}
+
+.navbar-container-fluid {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+.navbar-container-fluid .navbar-container .navbar-1 {
+  background-color: transparent !important;
+  border: none;
+  padding: 0px;
+}
+.navbar-container-fluid .navbar-container .navbar-brand {
+  font-size: 0.7rem;
+  color: white;
+  margin-right: 40px;
+}
+.navbar-container-fluid .navbar-container .nav-item i {
+  font-size: 0.7rem;
+  color: white;
+}
+
+.navbar-1-row {
+  border-bottom: 1px solid white;
+}
+
+.navbar-2-container .navbar-2 {
+  background-color: transparent !important;
+  padding: 0;
+  align-items: center;
+}
+.navbar-2-container .navbar-2 .navbar-brand {
+  color: white;
+  padding-bottom: 10px;
+}
+.navbar-2-container .navbar-2 .nav-link {
+  color: white;
+  font-size: 0.8rem;
+  margin-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid transparent;
+}
+.navbar-2-container .navbar-2 .nav-link i {
+  font-size: 0.7rem;
+}
+
+.navbar-2 .nav-link:hover {
+  border-bottom: 1px solid white;
+  color: white !important;
+}
+
+.navbar-2 .navbar-toggler:focus .carousel-caption {
+  transform: scale(1.8) !important;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
