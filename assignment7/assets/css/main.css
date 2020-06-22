@@ -101,8 +101,251 @@
   color: white !important;
 }
 
-.navbar-2 .navbar-toggler:focus .carousel-caption {
+.navbar-2 .navbar-toggler .show .carousel-caption {
   transform: scale(1.8) !important;
+}
+
+.cover-fluid {
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 50%);
+}
+.cover-fluid .cover-attr {
+  color: white;
+  padding: 30px;
+  background-color: skyblue;
+}
+.cover-fluid .cover-attr h5 {
+  font-size: 1rem;
+}
+.cover-fluid .cover-attr p {
+  font-size: 0.8rem;
+}
+.cover-fluid .cover-attr h4 {
+  font-weight: 300;
+}
+.cover-fluid .cover-attr .btn-cover-2 {
+  font-size: 0.7rem;
+  border: 1px solid white;
+  background-color: transparent;
+}
+.cover-fluid .cover-attr .timetable {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding: 15px 0 15px 0;
+}
+.cover-fluid .cover-attr .timetable span {
+  font-size: 0.8rem;
+}
+
+.cover-attr:nth-child(1) {
+  background-color: #80a9f8;
+}
+
+.cover-attr:nth-child(2) {
+  background-color: #518af6;
+}
+
+.cover-attr:nth-child(3) {
+  background-color: #4372cc;
+}
+
+@media only screen and (max-width: 768px) {
+  .cover-section .carousel-inner img {
+    height: 1350px !important;
+    filter: brightness(90%);
+  }
+}
+.medical-section {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .medical-section {
+    margin-top: 450px;
+  }
+}
+.medical-quality-container .welcome-container {
+  margin-top: 30px;
+}
+.medical-quality-container .welcome-container p {
+  color: #b4b8c1;
+  font: 0.9rem;
+}
+
+.medical-quality-row {
+  margin-top: 50px;
+}
+.medical-quality-row .medical-quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.medical-quality-row .medical-quality img {
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 10px;
+  border-color: #f7f7f7;
+  margin-bottom: 20px;
+}
+.medical-quality-row .medical-quality p {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.medical-quality-row .col-12 {
+  padding: 30px;
+}
+
+.doctors-section {
+  background-color: #f7f7f7;
+}
+
+.heading-container p {
+  color: #b4b8c1;
+  font: 0.9rem;
+}
+
+.card-container .card {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  margin: auto;
+  text-align: center;
+  width: auto !important;
+}
+.card-container .card img {
+  object-fit: cover;
+}
+.card-container .card p {
+  font-size: 0.8rem;
+  color: #b4b8c1;
+}
+.card-container .card .btn-3 {
+  font-size: 0.7rem;
+  color: #518af6;
+  border: 1px solid #518af6;
+  background-color: transparent;
+  border-radius: 2px;
+}
+.card-container .card .btn-3:hover {
+  background-color: #518af6;
+  color: white;
+}
+.card-container .col-12 {
+  padding: 20px;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+.carousel-indicators .active {
+  background-color: #518af6 !important;
+}
+.carousel-indicators .indicators {
+  height: 7px !important;
+  width: 7px !important;
+  border: 2px solid #518af6 !important;
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-right: 10px !important;
+  opacity: 1 !important;
+}
+
+.card-title {
+  position: relative !important;
+}
+
+.card-title::before {
+  content: " ";
+  position: absolute !important;
+  width: 80%;
+  height: 1px;
+  border-bottom: 1px solid #b4b8c1;
+  bottom: -7px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.stats-section {
+  background-image: url(/assignment7/assets/img/man.jpg);
+  position: relative;
+}
+.stats-section .stats-col {
+  padding: 80px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+.stats-section::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #518af6;
+  opacity: 0.7;
+}
+
+.services-section {
+  padding-top: 100px;
+}
+.services-section .departments {
+  background-color: #518af6;
+  color: white;
+  padding: 30px;
+}
+.services-section .departments ol {
+  padding: 0;
+}
+.services-section .departments li {
+  list-style: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.services-section .departments li:nth-child(6) {
+  border-bottom: none;
+}
+.services-section .departments .btn-3 {
+  font-size: 0.7rem;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.services-container .card {
+  width: auto !important;
+  margin: auto;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+.services-container .card p {
+  font-size: 0.8rem;
+  color: #b4b8c1;
+}
+.services-container .carousel-control-prev,
+.services-container .carousel-control-next {
+  width: 40px;
+  height: 50px;
+  top: -50px;
+  opacity: 1;
+  background-color: #518af6;
+}
+.services-container .carousel-control-prev .carousel-control-prev-icon,
+.services-container .carousel-control-prev .carousel-control-next-icon,
+.services-container .carousel-control-next .carousel-control-prev-icon,
+.services-container .carousel-control-next .carousel-control-next-icon {
+  height: 10px;
+  width: 10px;
+  color: white;
+}
+.services-container .carousel-control-prev {
+  right: 50px !important;
 }
 
 body {

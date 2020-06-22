@@ -1,0 +1,56 @@
+.services-section {
+  padding-top: 100px;
+  .departments {
+    background-color: $primary-color;
+    color: white;
+    padding: 30px;
+    ol {
+      padding: 0;
+    }
+    li {
+      list-style: none;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      font-weight: 300;
+      font-size: 0.8rem;
+    }
+    li:nth-child(6) {
+      border-bottom: none;
+    }
+    .btn-3 {
+      font-size: $btn-font-size;
+      border: 1px solid white;
+      background-color: transparent;
+    }
+  }
+}
+
+.services-container {
+  .card {
+    width: auto !important;
+    margin: auto;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    p {
+      font-size: 0.8rem;
+      color: $muted-text;
+    }
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    height: 50px;
+    top: -50px;
+    opacity: 1;
+    background-color: $primary-color;
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+      color: white;
+    }
+  }
+  .carousel-control-prev {
+    right: 50px !important;
+  }
+}

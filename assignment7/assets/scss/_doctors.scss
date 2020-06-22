@@ -1,0 +1,92 @@
+.doctors-section {
+  background-color: rgb(247, 247, 247);
+}
+.heading-container {
+  p {
+    color: rgb(180, 184, 193);
+    font: 0.9rem;
+  }
+}
+
+.card-container {
+  .card {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: center;
+    width: auto !important;
+
+    img {
+      object-fit: cover;
+    }
+    p {
+      font-size: 0.8rem;
+      color: $muted-text;
+    }
+    .btn-3 {
+      font-size: $btn-font-size;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      background-color: transparent;
+      border-radius: 2px;
+    }
+    .btn-3:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+  .col-12 {
+    padding: 20px;
+  }
+}
+
+.carousel-indicators {
+  bottom: -50px;
+  .active {
+    background-color: $primary-color !important;
+  }
+  .indicators {
+    height: 7px !important;
+    width: 7px !important;
+    border: 2px solid $primary-color !important;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-right: 10px !important;
+    opacity: 1 !important;
+  }
+}
+
+.card-title {
+  position: relative !important;
+}
+.card-title::before {
+  content: " ";
+  position: absolute !important;
+  width: 80%;
+  height: 1px;
+  border-bottom: 1px solid $muted-text;
+  bottom: -7px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.stats-section {
+  background-image: url(/assignment7/assets/img/man.jpg);
+  position: relative;
+  .stats-col {
+    padding: 80px;
+    color: white;
+    z-index: 1;
+    text-align: center;
+  }
+}
+
+.stats-section::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $primary-color;
+  opacity: 0.7;
+}
