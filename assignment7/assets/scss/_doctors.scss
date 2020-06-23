@@ -1,5 +1,6 @@
 .doctors-section {
   background-color: rgb(247, 247, 247);
+  padding-bottom: 100px;
 }
 .heading-container {
   p {
@@ -14,9 +15,11 @@
     margin: auto;
     text-align: center;
     width: auto !important;
+    height: 100%;
 
     img {
       object-fit: cover;
+      height: 175px !important;
     }
     p {
       font-size: 0.8rem;
@@ -35,7 +38,7 @@
     }
   }
   .col-12 {
-    padding: 20px;
+    padding-top: 20px;
   }
 }
 

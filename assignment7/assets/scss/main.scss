@@ -2,7 +2,12 @@
 @import "cover";
 @import "doctors";
 @import "services";
+@import "customer";
+@import "news";
+@import "appointment";
+@import "references";
 
 body {
   font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
 }

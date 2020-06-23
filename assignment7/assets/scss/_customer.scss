@@ -1,0 +1,56 @@
+.customer-section {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background-color: rgb(247, 247, 247);
+  .carousel-indicators {
+    bottom: -50px;
+    .active {
+      background-color: $primary-color !important;
+    }
+    .indicators {
+      height: 7px !important;
+      width: 7px !important;
+      border: 2px solid $primary-color !important;
+      border-radius: 50%;
+      margin-top: 100px;
+      margin-right: 10px !important;
+      opacity: 1 !important;
+    }
+  }
+}
+
+.customer-col {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  .customer-div {
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.1);
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    img {
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .customer-name {
+      margin-top: 30px;
+    }
+    .customer-name,
+    .customer-link {
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+    }
+    .customer-about {
+      margin-top: 15px;
+      font-size: 0.8rem;
+      color: $muted-text;
+    }
+  }
+}
