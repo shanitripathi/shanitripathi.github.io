@@ -4,7 +4,7 @@
 .cover-section .carousel-inner img {
   object-fit: cover;
   height: 750px;
-  filter: brightness(85%);
+  filter: brightness(80%);
 }
 .cover-section .carousel-inner .carousel-item {
   position: relative;
@@ -54,7 +54,7 @@
 .navbar-container-fluid {
   position: absolute;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.11);
+  background-color: transparent;
 }
 .navbar-container-fluid .navbar-container .navbar-1 {
   background-color: transparent !important;
@@ -79,6 +79,10 @@
   background-color: transparent !important;
   padding: 0;
   align-items: center;
+}
+.navbar-2-container .navbar-2 .logo-icon {
+  color: #518af6;
+  font-size: 1.4rem;
 }
 .navbar-2-container .navbar-2 .navbar-brand {
   color: white;
@@ -155,6 +159,7 @@
   .cover-section .carousel-inner img {
     height: 1350px !important;
     filter: brightness(90%);
+    object-position: 65%;
   }
 }
 .medical-section {
@@ -201,6 +206,10 @@
   padding: 30px;
 }
 
+.navbar-toggler:focus {
+  background-color: 0;
+}
+
 .doctors-section {
   background-color: #f7f7f7;
   padding-bottom: 100px;
@@ -221,6 +230,7 @@
 .card-container .card img {
   object-fit: cover;
   height: 175px !important;
+  object-position: top;
 }
 .card-container .card p {
   font-size: 0.8rem;
@@ -239,6 +249,7 @@
 }
 .card-container .col-12 {
   padding-top: 20px;
+  overflow-x: hidden;
 }
 
 .carousel-indicators {
@@ -327,6 +338,7 @@
   margin: auto;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   height: 100%;
+  border: none;
 }
 .services-container .card p {
   font-size: 0.8rem;
@@ -400,6 +412,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  object-position: top;
 }
 .customer-col .customer-div .customer-name {
   margin-top: 30px;
@@ -614,7 +627,6 @@ textarea {
 .popular-col .post {
   margin-bottom: 10px;
   display: flex;
-  justify-content: space-between;
 }
 .popular-col .post img {
   width: 50px;
@@ -655,7 +667,7 @@ footer .container div a {
   color: grey;
   font-size: 0.7rem;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 footer .container div a:hover {
   color: white;
@@ -664,6 +676,7 @@ footer .container div a:hover {
 body {
   font-family: "Work Sans", sans-serif;
   overflow-x: hidden;
+  user-select: none;
 }
 
 /*# sourceMappingURL=main.css.map */

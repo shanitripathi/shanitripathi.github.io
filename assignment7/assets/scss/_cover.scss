@@ -4,7 +4,7 @@
     img {
       object-fit: cover;
       height: 750px;
-      filter: brightness(85%);
+      filter: brightness(80%);
     }
     .carousel-item {
       position: relative;
@@ -55,9 +55,10 @@
 
 .navbar-container-fluid {
   position: absolute;
+
   top: 0;
 
-  background-color: rgba($color: #000000, $alpha: 0.11);
+  background-color: transparent;
   .navbar-container {
     .navbar-1 {
       background-color: transparent !important;
@@ -87,7 +88,10 @@
     background-color: transparent !important;
     padding: 0;
     align-items: center;
-
+    .logo-icon {
+      color: $primary-color;
+      font-size: 1.4rem;
+    }
     .navbar-brand {
       color: white;
       padding-bottom: 10px;
@@ -175,6 +179,7 @@
       img {
         height: 1350px !important;
         filter: brightness(90%);
+        object-position: 65%;
       }
     }
   }
@@ -228,4 +233,8 @@
   .col-12 {
     padding: 30px;
   }
+}
+
+.navbar-toggler:focus {
+  background-color: red($color: #000000);
 }

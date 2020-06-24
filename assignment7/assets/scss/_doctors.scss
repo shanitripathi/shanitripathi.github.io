@@ -20,6 +20,7 @@
     img {
       object-fit: cover;
       height: 175px !important;
+      object-position: top;
     }
     p {
       font-size: 0.8rem;
@@ -39,6 +40,7 @@
   }
   .col-12 {
     padding-top: 20px;
+    overflow-x: hidden;
   }
 }
 
