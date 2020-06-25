@@ -40,10 +40,11 @@
       color: white;
     }
   }
-  .col-12 {
-    padding: 20px;
-    overflow-x: hidden;
-  }
+  // .col-12 {
+  //   padding: 20px;
+  //   padding: 0;
+  //   overflow-x: hidden;
+  // }
 }
 
 .carousel-indicators {
@@ -85,10 +86,13 @@
   background-image: url(/assignment7/assets/img/man.jpg);
   position: relative;
   .stats-col {
-    padding: 80px;
+    padding: 100px 15px 100px 15px;
     color: white;
     z-index: 1;
     text-align: center;
+    h4 {
+      font-size: 2.2rem;
+    }
   }
 }
 

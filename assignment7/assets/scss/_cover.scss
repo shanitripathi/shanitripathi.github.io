@@ -1,6 +1,5 @@
 .cover-section {
   position: relative;
-
   .carousel-inner {
     img {
       object-fit: cover;
@@ -56,7 +55,7 @@
 
 .navbar-container-fluid {
   position: absolute;
-
+  z-index: 20;
   top: 0;
 
   background-color: transparent;
@@ -104,9 +103,13 @@
       padding-top: 20px;
       padding-bottom: 30px;
       border-bottom: 1px solid transparent;
+      display: inline-block;
       i {
         font-size: 0.7rem;
       }
+    }
+    .navbar-nav {
+      flex-direction: row;
     }
   }
 }
@@ -115,16 +118,6 @@
   .nav-link:hover {
     border-bottom: 1px solid white;
     color: white !important;
-  }
-}
-
-.navbar-2 {
-  .navbar-toggler {
-    .show {
-      .carousel-caption {
-        transform: scale(1.8) !important;
-      }
-    }
   }
 }
 
@@ -174,18 +167,6 @@
   background-color: rgb(67, 114, 204);
 }
 
-@media only screen and (max-width: 976px) {
-  .cover-section {
-    .carousel-inner {
-      img {
-        height: 1450px !important;
-        filter: brightness(90%);
-        object-position: 65%;
-      }
-    }
-  }
-}
-
 .medical-section {
   margin-top: 200px;
   margin-bottom: 100px;
@@ -199,7 +180,7 @@
 
 .medical-quality-container {
   .welcome-container {
-    margin-top: 30px;
+    margin-top: 70px;
     p {
       color: rgb(180, 184, 193);
       font: 0.9rem;
@@ -238,4 +219,32 @@
 
 .navbar-toggler:focus {
   background-color: red($color: #000000);
+}
+
+@media only screen and (max-width: 767px) {
+  .cover-section {
+    .carousel-inner {
+      img {
+        height: 1100px !important;
+        filter: brightness(90%);
+        object-position: 65%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: column !important;
+    .nav-link {
+      padding-bottom: 0 !important;
+    }
+  }
+  .cover-fluid {
+    transform: translate(0, 60%);
+  }
+  .carousel-inner {
+    h1 {
+      font-size: 2.5rem !important;
+    }
+  }
 }
