@@ -580,7 +580,21 @@ textarea {
   background-color: #f7f7f7;
 }
 
-.ch-1 {
+.card-header {
+  padding: 0;
+}
+.card-header button {
+  padding: 15px;
+  text-decoration: none !important;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.card-header button:hover {
+  color: black;
+}
+.card-header button:focus {
   background-color: #518af6;
   color: white !important;
 }
