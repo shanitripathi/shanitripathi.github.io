@@ -11,4 +11,12 @@ body {
   font-family: "Work Sans", sans-serif;
   overflow-x: hidden;
   user-select: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-img-top {
+  border-top-left-radius: unset !important;
+  border-top-right-radius: unset !important;
 }

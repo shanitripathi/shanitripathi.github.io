@@ -1,5 +1,6 @@
 .cover-section {
   position: relative;
+
   .carousel-inner {
     img {
       object-fit: cover;
@@ -173,11 +174,11 @@
   background-color: rgb(67, 114, 204);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 976px) {
   .cover-section {
     .carousel-inner {
       img {
-        height: 1350px !important;
+        height: 1450px !important;
         filter: brightness(90%);
         object-position: 65%;
       }

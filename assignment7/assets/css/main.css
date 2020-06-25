@@ -155,9 +155,9 @@
   background-color: #4372cc;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 976px) {
   .cover-section .carousel-inner img {
-    height: 1350px !important;
+    height: 1450px !important;
     filter: brightness(90%);
     object-position: 65%;
   }
@@ -221,11 +221,13 @@
 }
 
 .card-container .card {
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
   margin: auto;
   text-align: center;
   width: auto !important;
   height: 100%;
+  border: none;
+  border-radius: 0;
 }
 .card-container .card img {
   object-fit: cover;
@@ -248,12 +250,17 @@
   color: white;
 }
 .card-container .col-12 {
-  padding-top: 20px;
+  padding: 20px;
   overflow-x: hidden;
 }
 
 .carousel-indicators {
   bottom: -50px;
+  width: 100px;
+  left: 50%;
+  margin-left: unset;
+  margin-right: unset;
+  transform: translate(-50%, 0);
 }
 .carousel-indicators .active {
   background-color: #518af6 !important;
@@ -396,8 +403,8 @@
   padding-bottom: 20px;
 }
 .customer-col .customer-div {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
   background-color: white;
   position: relative;
 }
@@ -415,7 +422,7 @@
   object-position: top;
 }
 .customer-col .customer-div .customer-name {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .customer-col .customer-div .customer-name,
 .customer-col .customer-div .customer-link {
@@ -614,6 +621,9 @@ textarea {
   display: inline-block;
   font-size: 0.7rem;
 }
+.navigation-col .navigation-point i {
+  margin-right: 5px;
+}
 
 .popular-col {
   display: flex;
@@ -667,7 +677,7 @@ footer .container div a {
   color: grey;
   font-size: 0.7rem;
   text-decoration: none;
-  margin-left: 0px;
+  margin-left: 20px;
 }
 footer .container div a:hover {
   color: white;
@@ -677,6 +687,14 @@ body {
   font-family: "Work Sans", sans-serif;
   overflow-x: hidden;
   user-select: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-img-top {
+  border-top-left-radius: unset !important;
+  border-top-right-radius: unset !important;
 }
 
 /*# sourceMappingURL=main.css.map */

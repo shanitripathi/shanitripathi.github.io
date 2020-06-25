@@ -11,11 +11,13 @@
 
 .card-container {
   .card {
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
     margin: auto;
     text-align: center;
     width: auto !important;
     height: 100%;
+    border: none;
+    border-radius: 0;
 
     img {
       object-fit: cover;
@@ -39,13 +41,18 @@
     }
   }
   .col-12 {
-    padding-top: 20px;
+    padding: 20px;
     overflow-x: hidden;
   }
 }
 
 .carousel-indicators {
   bottom: -50px;
+  width: 100px;
+  left: 50%;
+  margin-left: unset;
+  margin-right: unset;
+  transform: translate(-50%, 0);
   .active {
     background-color: $primary-color !important;
   }
