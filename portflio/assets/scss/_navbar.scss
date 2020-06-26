@@ -1,0 +1,13 @@
+.navbar {
+  background-color: black !important;
+  padding-top: 50px;
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+  }
+  .nav-link:hover {
+    color: coral !important;
+
+    transition: 300ms ease-in-out;
+  }
+}

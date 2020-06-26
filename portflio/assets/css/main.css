@@ -1,0 +1,20 @@
+.navbar {
+  background-color: black !important;
+  padding-top: 50px;
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: white !important;
+}
+.navbar .nav-link:hover {
+  color: coral !important;
+  transition: 300ms ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
