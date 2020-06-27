@@ -1,0 +1,76 @@
+.about-container {
+  margin-top: 100px;
+  .image-col {
+    text-align: center;
+    .front-img {
+      height: 95%;
+      width: 80%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+  .para-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h5 {
+      position: relative;
+      .profile-pic {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 0;
+        transform: translate(0, -110%);
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.references {
+  text-align: center;
+  .Qualification {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      p {
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+  .skills {
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p {
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+}

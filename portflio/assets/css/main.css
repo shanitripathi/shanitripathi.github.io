@@ -1,20 +1,170 @@
-.navbar {
-  background-color: black !important;
-  padding-top: 50px;
+.navbar-section {
+  background-color: black;
 }
-.navbar .navbar-brand,
-.navbar .nav-link {
+.navbar-section .navbar {
+  background-color: black !important;
+  padding-top: 30px;
+}
+.navbar-section .navbar .navbar-brand,
+.navbar-section .navbar .nav-link {
   color: white !important;
 }
-.navbar .nav-link:hover {
-  color: coral !important;
+.navbar-section .navbar .nav-link:hover {
+  color: brown !important;
   transition: 300ms ease-in-out;
+}
+.navbar-section .navbar .navbar-toggler {
+  background-color: white;
+  outline: none;
+}
+
+.gallery-col {
+  margin-top: 100px;
+}
+.gallery-col .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-col .gallery .first-image {
+  height: 400px;
+  width: 300px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.gallery-col .gallery .first-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border: 10px solid black;
+}
+
+@media only screen and (max-width: 900px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.first-image {
+  position: relative;
+}
+.first-image .project-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white !important;
+  border: 20px solid white;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  opacity: 0;
+}
+.first-image .project-link h5 {
+  font-size: 0.9rem;
+}
+
+.project-link:hover {
+  opacity: 1;
+  transition: 500ms ease-in-out;
+}
+
+footer {
+  margin-top: 70px;
+  background-color: black;
+}
+footer .container {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+footer .container span {
+  font-size: 0.8rem;
+}
+
+.about-container {
+  margin-top: 100px;
+}
+.about-container .image-col {
+  text-align: center;
+}
+.about-container .image-col .front-img {
+  height: 95%;
+  width: 80%;
+  object-fit: cover;
+  object-position: top;
+}
+.about-container .para-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-container .para-col h5 {
+  position: relative;
+}
+.about-container .para-col h5 .profile-pic {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  transform: translate(0, -110%);
+}
+.about-container .para-col h5 .profile-pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+.references {
+  text-align: center;
+}
+.references .Qualification {
+  display: flex;
+  flex-direction: column;
+}
+.references .Qualification div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.references .Qualification div p {
+  margin-bottom: 0.2rem;
+}
+.references .links {
+  display: flex;
+  flex-direction: column;
+}
+.references .links div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.references .links div a {
+  color: black;
+  text-decoration: none;
+}
+.references .skills div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.references .skills div p {
+  margin-bottom: 0.2rem;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
+  user-select: none;
+}
+body a:hover {
+  color: brown !important;
+  transition: 300ms ease-in-out;
 }
 
 /*# sourceMappingURL=main.css.map */

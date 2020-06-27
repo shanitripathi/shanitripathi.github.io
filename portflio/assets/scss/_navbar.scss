@@ -1,13 +1,21 @@
-.navbar {
-  background-color: black !important;
-  padding-top: 50px;
-  .navbar-brand,
-  .nav-link {
-    color: white !important;
-  }
-  .nav-link:hover {
-    color: coral !important;
+.navbar-section {
+  background-color: black;
+  .navbar {
+    background-color: black !important;
+    padding-top: 30px;
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+    }
+    .nav-link:hover {
+      color: brown !important;
 
-    transition: 300ms ease-in-out;
+      transition: 300ms ease-in-out;
+    }
+    .navbar-toggler {
+      background-color: white;
+
+      outline: none;
+    }
   }
 }
