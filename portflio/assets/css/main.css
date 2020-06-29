@@ -15,7 +15,9 @@
   width: 60px;
   text-align: center;
   margin-bottom: 10px;
-  border-bottom: 2px solid white;
+  border-bottom: 5px solid white;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .navbar-section .navbar .nav-link:hover::after {
   position: absolute;
