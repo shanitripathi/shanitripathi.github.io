@@ -7,15 +7,44 @@
     .nav-link {
       color: white !important;
     }
-    .nav-link:hover {
-      color: brown !important;
+    .nav-link {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      text-align: center;
+      margin-bottom: 10px;
+      border-bottom: 2px solid white;
+    }
+    .nav-link:hover::after {
+      position: absolute;
+      content: " ";
+      background-color: white;
+      left: 0;
+      right: 0;
 
-      transition: 300ms ease-in-out;
+      bottom: 0;
+      height: 2px;
+      animation: 300ms navcover ease-in-out;
+      animation-fill-mode: forwards;
+      z-index: -1;
+    }
+    .nav-link:hover {
+      color: black !important;
+      z-index: 20;
     }
     .navbar-toggler {
       background-color: white;
 
       outline: none;
     }
+  }
+}
+
+@keyframes navcover {
+  from {
+    height: 2px;
+  }
+  to {
+    height: 100%;
   }
 }

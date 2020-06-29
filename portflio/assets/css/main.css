@@ -9,15 +9,43 @@
 .navbar-section .navbar .nav-link {
   color: white !important;
 }
+.navbar-section .navbar .nav-link {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+.navbar-section .navbar .nav-link:hover::after {
+  position: absolute;
+  content: " ";
+  background-color: white;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  animation: 300ms navcover ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
 .navbar-section .navbar .nav-link:hover {
-  color: brown !important;
-  transition: 300ms ease-in-out;
+  color: black !important;
+  z-index: 20;
 }
 .navbar-section .navbar .navbar-toggler {
   background-color: white;
   outline: none;
 }
 
+@keyframes navcover {
+  from {
+    height: 2px;
+  }
+  to {
+    height: 100%;
+  }
+}
 .gallery-col {
   margin-top: 100px;
 }
