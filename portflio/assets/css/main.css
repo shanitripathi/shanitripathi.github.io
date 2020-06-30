@@ -15,39 +15,34 @@
   width: 60px;
   text-align: center;
   margin-bottom: 10px;
-  border-bottom: 5px solid white;
   margin-left: 10px;
   margin-right: 10px;
 }
-.navbar-section .navbar .nav-link:hover::after {
+.navbar-section .navbar .nav-link::before {
   position: absolute;
   content: " ";
-  background-color: white;
+  background-color: white !important;
   left: 0;
   right: 0;
+  z-index: 0;
   bottom: 0;
-  height: 2px;
-  animation: 300ms navcover ease-in-out;
-  animation-fill-mode: forwards;
-  z-index: -1;
+  height: 4px;
 }
 .navbar-section .navbar .nav-link:hover {
   color: black !important;
-  z-index: 20;
+  z-index: 1;
+}
+.navbar-section .navbar .nav-link:hover::before {
+  height: 100% !important;
+  z-index: -1;
+  transition: 300ms linear;
+  transition-property: height;
 }
 .navbar-section .navbar .navbar-toggler {
   background-color: white;
   outline: none;
 }
 
-@keyframes navcover {
-  from {
-    height: 2px;
-  }
-  to {
-    height: 100%;
-  }
-}
 .gallery-col {
   margin-top: 100px;
 }
@@ -102,8 +97,11 @@
 }
 
 footer {
-  margin-top: 70px;
+  position: sticky;
+  margin-top: 100px;
   background-color: black;
+  bottom: 0;
+  width: 100%;
 }
 footer .container {
   text-align: center;
@@ -191,6 +189,8 @@ body {
   padding: 0;
   font-family: "Oswald", sans-serif;
   user-select: none;
+  height: 100vh;
+  position: relative;
 }
 body a:hover {
   color: brown !important;

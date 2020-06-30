@@ -54,8 +54,11 @@
 }
 
 footer {
-  margin-top: 70px;
+  position: sticky;
+  margin-top: 100px;
   background-color: black;
+  bottom: 0;
+  width: 100%;
   .container {
     text-align: center;
     color: white;
