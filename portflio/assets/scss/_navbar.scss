@@ -34,7 +34,7 @@
     .nav-link:hover::before {
       height: 100% !important;
       z-index: -1;
-      transition: 300ms linear;
+      transition: 300ms ease-in-out;
       transition-property: height;
     }
     .navbar-toggler {
