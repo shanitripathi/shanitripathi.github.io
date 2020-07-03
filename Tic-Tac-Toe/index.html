@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="/Tic-Tac-Toe/assets/css/main.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1 class="text-center mt-5">Welcome to TIC-TAC-TOE</h1>
+    <div class="container mb-2">
+      <div class="line-1 line">
+        <div class="left">
+          <button class="cell" onclick="game(1)" id="1"></button>
+        </div>
+        <div class="middle">
+          <button class="cell" onclick="game(2)" id="2"></button>
+        </div>
+        <div class="right">
+          <button class="cell" onclick="game(3)" id="3"></button>
+        </div>
+      </div>
+      <div class="line-2 line">
+        <div class="left">
+          <button class="cell" onclick="game(4)" id="4"></button>
+        </div>
+        <div class="middle">
+          <button class="cell" onclick="game(5)" id="5"></button>
+        </div>
+        <div class="right">
+          <button class="cell" onclick="game(6)" id="6"></button>
+        </div>
+      </div>
+      <div class="line-3 line">
+        <div class="left">
+          <button class="cell" onclick="game(7)" id="7"></button>
+        </div>
+        <div class="middle">
+          <button class="cell" onclick="game(8)" id="8"></button>
+        </div>
+        <div class="right">
+          <button class="cell" onclick="game(9)" id="9"></button>
+        </div>
+      </div>
+      <h1 class="demo"></h1>
+    </div>
+    <div class="wintext-container" id="restartwindow">
+      <h1 id="wintext"></h1>
+      <button class="wintext-button" onclick="reload()">
+        <h5>Restart Game</h5>
+      </button>
+    </div>
+    <script src="/Tic-Tac-Toe/assets/js/main.js"></script>
+  </body>
+</html>

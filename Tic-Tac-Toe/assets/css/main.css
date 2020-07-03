@@ -1,0 +1,87 @@
+body {
+  position: relative;
+}
+.container {
+  margin-top: 100px;
+}
+
+.line {
+  height: 200px;
+  justify-content: center;
+  display: flex;
+}
+.line div {
+  height: 100%;
+  width: 200px;
+  border: 5px solid black;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.left {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.middle {
+  border-top: none !important;
+}
+
+.right {
+  border-right: none !important;
+  border-top: none !important;
+  border-left: none !important;
+}
+
+.line-3 div {
+  border-bottom: none !important;
+}
+
+.line button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.line button:hover {
+  background-color: coral;
+}
+
+@media only screen and (max-width: 700px) {
+  .line {
+    height: 100px;
+  }
+  .line div {
+    width: 100px;
+  }
+}
+
+.wintext-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+}
+
+.wintext-button {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+  background-color: coral;
+  border: none;
+}
