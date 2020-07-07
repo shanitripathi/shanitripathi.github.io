@@ -1,10 +1,30 @@
 var list = ["x", "o", "x", "o", "x", "o", "x", "o", "x"];
+var undolist = [];
+var temp;
+var idlist = [];
+
+function undodisplay() {
+  if (idlist.length > 0) {
+    document.getElementById("undobutton").style.display = "block";
+  } else {
+    document.getElementById("undobutton").style.display = "none";
+  }
+}
+
+function undo() {
+  temp = undolist.pop();
+  list.push(temp);
+  document.getElementById(idlist.pop()).innerText = "";
+  undodisplay();
+}
+
 function marker(id) {
   console.log(list);
   document.getElementById(id).innerText = list[list.length - 1];
-  document.getElementById(id).style.cursor = "not-allowed";
-
-  list.pop();
+  idlist.push(id);
+  temp = list.pop();
+  undolist.push(temp);
+  undodisplay();
 }
 
 function winCheck() {
@@ -85,3 +105,5 @@ function game(id) {
 function reload() {
   location.reload();
 }
+
+document.getElementById("undobutton").style.display = "none";
