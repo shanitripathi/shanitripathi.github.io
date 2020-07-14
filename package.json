@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "node": "^10.21.0",
     "scss": "^0.2.4"
   },
   "devDependencies": {},
