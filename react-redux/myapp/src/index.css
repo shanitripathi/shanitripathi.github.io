@@ -24,15 +24,25 @@ code {
   color: white;
 }
 
+.todos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .todo-name {
   background-color: coral;
   color: white;
   padding: 10px;
-  border: 1px solid black;
+
   border-radius: 5px;
   display: inline-block;
   margin-bottom: 5px;
   font-weight: 600;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .todo-name button {
@@ -41,4 +51,16 @@ code {
   font-size: 0.7rem;
   border-radius: 10px;
   outline: none;
+}
+
+.input-todo {
+  width: 500px;
+  outline: none;
+  border: none;
+  padding: 20px;
+}
+
+.notodo-para {
+  font-weight: 800;
+  font-size: 1.5rem;
 }

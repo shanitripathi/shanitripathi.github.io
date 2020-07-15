@@ -1,11 +1,21 @@
 import React, { Component } from "react";
 import Todos from "./Todos";
+import Addtodos from "./AddTodos";
 class App extends React.Component {
   state = {
-    todos: [
-      { id: 1, content: "buy some milk" },
-      { id: 2, content: "Go to the gym" },
-    ],
+    todos: [],
+  };
+  addTodo = (todo) => {
+    todo.id = Math.random();
+    let todos = this.state.todos;
+    todos.push(todo);
+    this.setState({
+      todos: todos,
+    });
+    // let todos = [...this.state.todos, todo];
+    // this.setState({
+    //   todos: todos,
+    // });
   };
   deleteTodo = (id) => {
     let todos = this.state.todos.filter((todo) => {
@@ -20,6 +30,7 @@ class App extends React.Component {
       <div className="main-box">
         <h1 className="header-text">To-Do list</h1>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
+        <Addtodos addTodo={this.addTodo} />
       </div>
     );
   }

@@ -19,7 +19,7 @@ const Todos = ({ todos, deleteTodo }) => {
       );
     })
   ) : (
-    <p>No todos</p>
+    <p className="notodo-para">No todos</p>
   );
   return <div className="todos collection">{todoList}</div>;
 };
