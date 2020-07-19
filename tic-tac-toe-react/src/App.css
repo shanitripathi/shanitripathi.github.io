@@ -39,6 +39,9 @@
   background-color: transparent;
   box-shadow: none;
   outline: none;
+  font-size: 10rem;
+  font-weight: 900;
+  color: blue;
 }
 
 .line button:hover {
