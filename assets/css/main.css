@@ -197,5 +197,8 @@ body a:hover {
   color: brown !important;
   transition: 300ms ease-in-out;
 }
+.project-container {
+  margin-bottom: 70px;
+}
 
 /*# sourceMappingURL=main.css.map */
