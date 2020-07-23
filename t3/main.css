@@ -1,0 +1,46 @@
+body {
+  background-color: #0e2a3a;
+  color: white;
+}
+
+.container {
+  margin-top: 200px;
+}
+
+.title-tag {
+  font-weight: 100;
+  font-size: 4.5rem;
+  margin-bottom: 50px;
+}
+
+.btn-primary {
+  width: 250px;
+  display: block;
+  height: 50px;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: transparent;
+  border: 1px solid #ffffff;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+}
+
+.three-container {
+  display: flex;
+  padding: 10px;
+}
+
+.three-container div {
+  height: 150px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
