@@ -1,4 +1,4 @@
-html {
+/* html {
   position: relative;
   height: 100vh;
 }
@@ -99,4 +99,213 @@ html {
   background-color: black;
   color: White;
   display: none;
+} */
+
+body {
+  background-color: #0e2a3a;
 }
+
+.rectangle {
+  width: 103px;
+  height: 103px;
+  object-fit: contain;
+  border-radius: 12.5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.icons-container {
+  padding: 30px 0 30px 0;
+}
+
+.home-container {
+  margin-top: 100px;
+}
+
+.title-tag {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.btn-primary {
+  width: 270px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 40px;
+  border: solid 1px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+a {
+  color: white !important;
+}
+
+.line {
+  display: flex;
+}
+
+.line div {
+  height: 150px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.shape-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff847c !important;
+}
+.shape-container-2 {
+  background-color: #8fcfd1 !important;
+  position: relative;
+}
+
+.shape-container img {
+  animation-name: shape1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.shape-container-2 img {
+  position: absolute;
+  animation-name: shape2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shape1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shape2 {
+  0% {
+    bottom: 25%;
+  }
+
+  50% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 25%;
+  }
+}
+
+.loading-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-tag {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 30px;
+}
+
+.loading-container img {
+  animation: loadinganimation 1s;
+}
+.loading-container img:nth-child(2) {
+  animation: loadinganimation 1s;
+  animation-delay: 500ms;
+}
+.loading-container img:nth-child(3) {
+  animation: loadinganimation 1s;
+  animation-delay: 1s;
+}
+.loading-container img:nth-child(4) {
+  animation: loadinganimation 1s;
+  animation-delay: 1500ms;
+}
+
+@keyframes loadinganimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.game-container {
+  margin-top: 100px;
+}
+
+.game-tag {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.game-turn {
+  margin-top: 100px;
+}
+
+.game-turn img {
+  height: 50px;
+  width: 50px;
+}
+
+.game-turn div {
+  display: inline-block;
+  margin-left: 20px;
+  background-color: #ff847c;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.game-turn-2 div {
+  background-color: #8fcfd1;
+}
+
+.game-line {
+  display: flex;
+}
+
+.btn-game {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px;
+  border-radius: 15px;
+  border: none;
+  outline: none !important;
+  color: red;
+}
+
+.shape-container-x {
+  background-color: #ff847c;
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* .shape-container-x img {
+  height: 100px;
+  width: 100px;
+} */
