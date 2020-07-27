@@ -38,7 +38,7 @@ class Game extends Component {
               <button className="btn-game" id="9"></button>
             </div>
           </div>
-          <div class="col-12 col-lg-3 text-center text-lg-left">
+          <div class="col-12 col-lg-3 text-center text-lg-right">
             <h2 className="game-tag">PLAYER</h2>
             <div className="game-turn game-turn-2">
               <img src={oval} alt="" />

@@ -9,7 +9,7 @@ class GameLogic extends Component {
   handleClick = (e) => {
     let tempid = e.target.id;
     let tempmark = this.state.marks.pop();
-    e.target.innerText = tempmark;
+    e.target.innerText = "shani";
 
     console.log(tempid);
   };
