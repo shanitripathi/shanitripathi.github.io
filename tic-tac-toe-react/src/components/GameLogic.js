@@ -4,17 +4,24 @@ import rectangle from "../images/rectangle.svg";
 
 class GameLogic extends Component {
   state = {
-    marks: ["x", "o", "x", "o", "x", "o", "x", "o", "x"],
+    boardState: ["", "", "", "", "", "", "", "", ""],
+    currentPlayer: "o",
   };
-  handleClick = (e) => {
-    let tempid = e.target.id;
-    let tempmark = this.state.marks.pop();
-    e.target.innerText = "shani";
 
-    console.log(tempid);
+  handleClick = () => {
+    let { boardState, currentPlayer } = this.state;
+    if (boardState[2] === "") {
+      boardState[2] = currentPlayer;
+      this.setState({
+        currentPlayer: currentPlayer === "o" ? "x" : "o",
+      });
+    }
+    console.log(boardState);
   };
   render() {
-    return <Game state={this.state.marks} handleClick={this.handleClick} />;
+    return (
+      <Game boardState={this.state.boardState} handleClick={this.handleClick} />
+    );
   }
 }
 

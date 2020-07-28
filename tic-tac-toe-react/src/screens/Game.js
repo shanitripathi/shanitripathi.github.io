@@ -4,6 +4,7 @@ import oval from "../images/oval.svg";
 
 class Game extends Component {
   render() {
+    let { boardState, handleClick } = this.props;
     return (
       <div className="container game-container">
         <div class="row">
@@ -22,7 +23,7 @@ class Game extends Component {
               <button
                 className="btn-game"
                 id="1"
-                onClick={this.props.handleClick}
+                onClick={handleClick}
               ></button>
               <button className="btn-game" id="2"></button>
               <button className="btn-game" id="3"></button>
