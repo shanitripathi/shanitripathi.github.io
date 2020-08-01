@@ -11,7 +11,7 @@ class GameLogic extends Component {
   winCheck = () => {
     let { boardState, currentPlayer } = this.state;
     if (
-      ((boardState[0] === boardState[1]) === boardState[2]) == "o" ||
+      (boardState[0] == boardState[1]) == boardState[2] ||
       (boardState[0] === boardState[3]) === boardState[6] ||
       (boardState[0] === boardState[4]) === boardState[8] ||
       (boardState[1] === boardState[4]) === boardState[7] ||
