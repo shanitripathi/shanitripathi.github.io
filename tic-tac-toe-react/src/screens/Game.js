@@ -8,22 +8,49 @@ class Game extends Component {
     if (boardState[id] === "") {
       return <h1></h1>;
     } else if (boardState[id] === "o") {
-      return <h1>O</h1>;
+      return (
+        <div className="shape-container-o">
+          <img src={oval} alt="" />
+        </div>
+      );
     } else if (boardState[id] === "x") {
-      return <h1>X</h1>;
+      return (
+        <div className="shape-container-x">
+          <img src={rectangle} alt="" />
+        </div>
+      );
     }
   };
+
+  reload = () => {
+    window.location.reload();
+  };
+
   render() {
-    let { boardState, handleClick } = this.props;
+    let { boardState, handleClick, result, undo } = this.props;
     return (
       <div className="container game-container">
+        <div className="draw-window" id="result">
+          <h1>{result}</h1>
+          <button className="btn btn-primary btn-restart" onClick={this.reload}>
+            Restart Game
+          </button>
+        </div>
+        <div id="undo">
+          <button className="btn-primary btn" onClick={undo}>
+            Undo
+          </button>
+        </div>
         <div class="row">
           <div class="col-12 col-lg-3 text-center text-lg-left">
             <a href="/"></a>
             <h2 className="game-tag">PLAYER</h2>
             <div className="game-turn">
-              <img src={rectangle} alt="" />
-              <div>
+              <div id="td1">
+                <img src={rectangle} alt="" />
+              </div>
+
+              <div id="td2">
                 <img src={rectangle} alt="" />
               </div>
             </div>
@@ -120,8 +147,8 @@ class Game extends Component {
           <div class="col-12 col-lg-3 text-center text-lg-right">
             <h2 className="game-tag">PLAYER</h2>
             <div className="game-turn game-turn-2">
-              <img src={oval} alt="" />
-              <div>
+              <img id="tdo1" src={oval} alt="" />
+              <div id="tdo2">
                 <img src={oval} alt="" />
               </div>
             </div>

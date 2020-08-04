@@ -262,12 +262,16 @@ a {
   margin-top: 100px;
 }
 
+.game-turn div {
+  display: inline-block;
+}
+
 .game-turn img {
   height: 50px;
   width: 50px;
 }
 
-.game-turn div {
+.game-turn div:nth-child(2) {
   display: inline-block;
   margin-left: 20px;
   background-color: #ff847c;
@@ -275,7 +279,7 @@ a {
   padding: 20px;
 }
 
-.game-turn-2 div {
+.game-turn-2 div:nth-child(2) {
   background-color: #8fcfd1;
 }
 
@@ -295,7 +299,8 @@ a {
   color: red;
 }
 
-.shape-container-x {
+.shape-container-x,
+.shape-container-o {
   background-color: #ff847c;
   position: absolute;
   border-radius: 15px;
@@ -303,9 +308,48 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.shape-container-o {
+  background-color: #8fcfd1;
 }
 
 /* .shape-container-x img {
   height: 100px;
   width: 100px;
 } */
+
+.draw-window {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.draw-window h1 {
+  font-weight: 900;
+}
+
+#undo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.btn-restart {
+  display: block;
+
+  margin-top: -5px;
+}
