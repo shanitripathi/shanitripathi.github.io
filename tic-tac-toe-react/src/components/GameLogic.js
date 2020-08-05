@@ -10,6 +10,10 @@ class GameLogic extends Component {
     undostatelist: [],
   };
 
+  turndisplay = () => {
+    return false;
+  };
+
   undodisplay = () => {
     let { undostatelist } = this.state;
     if (undostatelist.length === 0) {
