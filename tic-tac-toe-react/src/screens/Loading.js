@@ -2,7 +2,10 @@ import React from "react";
 import rectangle from "../images/rectangle.svg";
 import oval from "../images/oval.svg";
 
-const Loading = () => {
+const Loading = (props) => {
+  setTimeout(() => {
+    props.history.push("/game");
+  }, 2000);
   return (
     <body>
       <div className="loading-container">

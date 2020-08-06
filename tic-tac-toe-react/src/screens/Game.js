@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import rectangle from "../images/rectangle.svg";
 import oval from "../images/oval.svg";
+import { Link } from "react-router-dom";
 
 class Game extends Component {
   boardMap = (id) => {
@@ -22,19 +23,18 @@ class Game extends Component {
     }
   };
 
-  reload = () => {
-    window.location.reload();
-  };
-
   render() {
     let { boardState, handleClick, result, undo } = this.props;
     return (
       <div className="container game-container">
         <div className="draw-window" id="result">
           <h1>{result}</h1>
-          <button className="btn btn-primary btn-restart" onClick={this.reload}>
+          {/* <button className="btn btn-primary btn-restart" onClick={this.reload}>
             Restart Game
-          </button>
+          </button> */}
+          <Link className="btn btn-primary btn-restart" to="/">
+            Restart Game
+          </Link>
         </div>
         <div id="undo">
           <button className="btn-primary btn" onClick={undo}>

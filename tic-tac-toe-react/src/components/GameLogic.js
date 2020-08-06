@@ -10,10 +10,6 @@ class GameLogic extends Component {
     undostatelist: [],
   };
 
-  turndisplay = () => {
-    return false;
-  };
-
   undodisplay = () => {
     let { undostatelist } = this.state;
     if (undostatelist.length === 0) {
@@ -35,7 +31,6 @@ class GameLogic extends Component {
       boardState: tempboardstate,
     });
     this.undodisplay();
-    this.turndisplay();
   };
 
   winCheck = () => {
@@ -54,7 +49,7 @@ class GameLogic extends Component {
         "x" ||
       ((boardState[3] === "x" && boardState[4]) === "x" && boardState[6]) ===
         "x" ||
-      ((boardState[3] === "x" && boardState[5]) === "x" && boardState[8]) ===
+      ((boardState[2] === "x" && boardState[5]) === "x" && boardState[8]) ===
         "x" ||
       ((boardState[3] === "x" && boardState[4]) === "x" && boardState[5]) ===
         "x" ||
@@ -76,7 +71,7 @@ class GameLogic extends Component {
         "o" ||
       ((boardState[2] === "o" && boardState[4]) === "o" && boardState[6]) ===
         "o" ||
-      ((boardState[3] === "o" && boardState[5]) === "o" && boardState[8]) ===
+      ((boardState[2] === "o" && boardState[5]) === "o" && boardState[8]) ===
         "o" ||
       ((boardState[3] === "o" && boardState[4]) === "o" && boardState[5]) ===
         "o" ||
@@ -109,7 +104,6 @@ class GameLogic extends Component {
       });
     }
     this.undodisplay();
-    this.turndisplay();
 
     this.winCheck();
   };

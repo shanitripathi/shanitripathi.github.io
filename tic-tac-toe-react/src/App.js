@@ -14,9 +14,10 @@ class App extends React.Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          {/* <Route exact path="/" component={Game} />
-          <Route path="/loading" component={Loading} /> */}
-          <GameLogic />
+
+          <Route exact path="/" component={Home} />
+          <Route path="/loading" component={Loading} />
+          <Route path="/game" component={GameLogic} />
         </div>
       </BrowserRouter>
     );

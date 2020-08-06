@@ -10,8 +10,6 @@ const Navbar = () => {
           <img src={logo} alt="" className="logo" />
         </div>
       </div>
-
-      {/* <Home /> */}
     </body>
   );
 };

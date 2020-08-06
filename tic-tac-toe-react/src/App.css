@@ -349,7 +349,9 @@ a {
 }
 
 .btn-restart {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 
-  margin-top: -5px;
+  margin-top: 0px;
 }

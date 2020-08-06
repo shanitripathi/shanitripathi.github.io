@@ -1,6 +1,7 @@
 import React from "react";
 import rectangle from "../images/rectangle.svg";
 import oval from "../images/oval.svg";
+import { Link, NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -9,9 +10,9 @@ const Home = () => {
         <div class="col text-center text-lg-left">
           <h1 className="title-tag">Let's Play</h1>
           <h1 className="title-tag">Tic-Tac-Toe</h1>
-          <a className="btn btn-primary" href="/loading">
+          <Link className="btn btn-primary" to="/loading">
             Start Game
-          </a>
+          </Link>
         </div>
         <div class="col d-none d-lg-block">
           <div className="line">
