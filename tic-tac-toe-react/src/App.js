@@ -6,7 +6,6 @@ import Navbar from "./screens/Navbar";
 import { BrowserRouter, Route } from "react-router-dom";
 import Loading from "./screens/Loading";
 import Game from "./screens/Game";
-import GameLogic from "./components/GameLogic";
 
 class App extends React.Component {
   render() {
