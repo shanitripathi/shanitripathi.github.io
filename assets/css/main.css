@@ -112,6 +112,10 @@ footer .container span {
   font-size: 0.8rem;
 }
 
+.project-container {
+  margin-bottom: 150px;
+}
+
 .about-container {
   margin-top: 100px;
 }
@@ -179,7 +183,6 @@ footer .container span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 100px;
 }
 .references .skills div p {
   margin-bottom: 0.2rem;
@@ -196,9 +199,6 @@ body {
 body a:hover {
   color: brown !important;
   transition: 300ms ease-in-out;
-}
-.project-container {
-  margin-bottom: 70px;
 }
 
 /*# sourceMappingURL=main.css.map */
