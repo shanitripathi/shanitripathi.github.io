@@ -99,3 +99,7 @@ body {
 .mute.active {
   background-color: grey;
 }
+
+i {
+  pointer-events: none;
+}

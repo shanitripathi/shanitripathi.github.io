@@ -1,0 +1,35 @@
+.hover-class {
+  color: white;
+  padding: 1rem;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.hover-class::after {
+  content: "Best Link! Ever";
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 1.3rem;
+  text-align: center;
+  width: 150px;
+  transition: 0.5s all ease-in;
+  z-index: -1;
+}
+
+.hover-class:hover::after {
+  /* content: "Best Link! Ever";
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 50%; */
+  transform: translate(-50%, -100%);
+  /* font-size: 1.3rem;
+  text-align: center;
+  width: 150px;
+  transition: 2.5s all ease-in; */
+}
