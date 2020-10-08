@@ -24,6 +24,8 @@ body {
   width: 80%;
   margin: auto;
   padding: 2rem 0rem;
+  z-index: 2;
+  position: relative;
 }
 
 .line1,
@@ -61,6 +63,7 @@ body {
   position: relative;
   flex: 1;
   flex-basis: 25rem;
+  overflow: hidden;
 }
 
 .hero-img img {
@@ -141,10 +144,20 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #17181a;
+  background-color: red;
   left: 0;
   top: 0;
 } */
+
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  background-color: #17181a;
+  top: -15%;
+  left: 0;
+}
 
 .cursor {
   width: 3rem;
@@ -152,4 +165,67 @@ body {
   border: 2px solid white;
   border-radius: 50%;
   position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.5 ease-in-out;
+  transition-property: background-color, transform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+}
+
+.activenow {
+  transform: translate(-50%, 0);
+  transition: 1s all ease-in;
+}
+
+.logoover {
+  font-size: 3rem;
+  color: red;
+}
+
+.cursor.nav-active {
+  background-color: rgb(167, 110, 231);
+  transform: scale(1.5);
+  transform-origin: 75% 75%;
+  z-index: 1;
+}
+
+.cursor.explore-active {
+  background-color: white;
+  transform: scale(2);
+
+  transform-origin: 75% 75%;
+}
+
+.title-swipe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, 100%);
+  mix-blend-mode: darken;
+}
+
+.title {
+  overflow: hidden;
+  position: relative;
+}
+
+.t-swipe1 {
+  background-color: cornsilk;
+}
+
+.t-swipe2 {
+  background-color: rgb(167, 110, 231);
+}
+
+.t-swipe3 {
+  background-color: rgb(255, 139, 93);
+}
+
+.hide {
+  overflow: hidden;
 }
