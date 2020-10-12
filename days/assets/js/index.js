@@ -30,7 +30,6 @@ function animateSlide() {
       reverse: false,
     })
       .setTween(slideT1)
-      .addIndicators()
       .addTo(controller);
     //new page amination
     const pageT1 = gsap.timeline();
@@ -46,7 +45,6 @@ function animateSlide() {
     })
       .setPin(slide, { pushFollowers: false })
       .setTween(pageT1)
-      .addIndicators()
       .addTo(controller);
   });
 }
