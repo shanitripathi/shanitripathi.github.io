@@ -318,3 +318,81 @@ body {
   bottom: 10%;
   opacity: 0.5;
 }
+
+@media screen and (max-width: 1500px) {
+  .hero-img {
+    height: 50vh;
+  }
+  .fashion-text h1 {
+    padding: 1rem 0rem;
+    font-size: 2rem;
+  }
+  .fashion-text p {
+    font-size: 1.2rem;
+  }
+  .fashion-img img {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
+  .slide {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-desc {
+    padding: 0;
+  }
+  .hero-desc h2 {
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+  }
+  .hero-img {
+    padding-top: 4rem;
+  }
+  .hero-desc p {
+    font-size: 1rem;
+    padding: 2rem 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .explore {
+    width: 60%;
+    margin: auto;
+  }
+  .detail-slide {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fashion-text {
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+  .fashion-text h1 {
+    margin: 2rem 0rem;
+  }
+  .fashion-nr {
+    font-size: 6rem;
+  }
+  .nav-bar {
+    display: block;
+  }
+  .nav-links {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .contact h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .contact p {
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+}
