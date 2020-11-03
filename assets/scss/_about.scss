@@ -15,21 +15,6 @@
     justify-content: center;
     h5 {
       position: relative;
-      .profile-pic {
-        height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        transform: translate(0, -110%);
-
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          object-position: top;
-          border-radius: 50%;
-        }
-      }
     }
   }
 }
@@ -73,5 +58,26 @@
         margin-bottom: 0.2rem;
       }
     }
+  }
+}
+
+// .para-col {
+//   img {
+//     border-radius: 50%;
+//   }
+// }
+
+.profile-pic {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  transform: translate(0, -110%);
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
   }
 }

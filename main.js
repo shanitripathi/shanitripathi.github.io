@@ -8,9 +8,30 @@ function animateHeader() {
   if (i < text.length) {
     headerName.innerHTML += text[i];
     i++;
-    console.log(text[i]);
+
     setTimeout(animateHeader, speed);
   }
 }
 
 animateHeader();
+
+const columns = document.querySelectorAll(".columns");
+const controller = new ScrollMagic.Controller();
+
+columns.forEach((column) => {
+  const absorb = gsap.timeline();
+  absorb.fromTo(
+    column,
+    { opacity: 0.4, y: "50%", scale: 0.5 },
+    { opacity: 1, y: "0", scale: 1 }
+  );
+
+  absorbScene = new ScrollMagic.Scene({
+    triggerElement: column,
+    triggerHook: 1,
+    reverse: true,
+  })
+
+    .setTween(absorb)
+    .addTo(controller);
+});

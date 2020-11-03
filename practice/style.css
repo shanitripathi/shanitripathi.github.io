@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first {
+  display: inline-block;
+  vertical-align: 30px;
+}
+
+.disable {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.para {
+  padding: 40px;
+  color: coral;
+  font-size: 1.5rem;
+  font-weight: 700;
+}

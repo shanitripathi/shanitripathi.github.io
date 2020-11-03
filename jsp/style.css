@@ -1,4 +1,4 @@
-.hover-class {
+/* .hover-class {
   color: white;
   padding: 1rem;
   background-color: black;
@@ -32,4 +32,31 @@
   text-align: center;
   width: 150px;
   transition: 2.5s all ease-in; */
+}
+
+/* .box {
+  height: 90px;
+  width: 90px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}  */
+
+
+.image{
+ height:40px !important;
+ width:10px;
+
+}
+
+.main{
+  background-color:red;
 }

@@ -36,7 +36,7 @@
   height: 100% !important;
   z-index: -1;
   transition: 300ms ease-in-out;
-  transition-property: height;
+  transition-property: all;
 }
 .navbar-section .navbar .navbar-toggler {
   background-color: white;
@@ -136,20 +136,6 @@ footer .container span {
 .about-container .para-col h5 {
   position: relative;
 }
-.about-container .para-col h5 .profile-pic {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  top: 0;
-  transform: translate(0, -110%);
-}
-.about-container .para-col h5 .profile-pic img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 50%;
-}
 
 .references {
   text-align: center;
@@ -186,6 +172,21 @@ footer .container span {
 }
 .references .skills div p {
   margin-bottom: 0.2rem;
+}
+
+.profile-pic {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  transform: translate(0, -110%);
+}
+.profile-pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
 }
 
 body {
