@@ -60,7 +60,7 @@
 .gallery-col .gallery .first-image img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border: 10px solid black;
 }
 
@@ -113,7 +113,7 @@ footer .container span {
 }
 
 .project-container {
-  margin-bottom: 150px;
+  margin-bottom: 300px;
 }
 
 .about-container {
@@ -139,6 +139,7 @@ footer .container span {
 
 .references {
   text-align: center;
+  margin-bottom: 200px !important;
 }
 .references .Qualification {
   display: flex;
