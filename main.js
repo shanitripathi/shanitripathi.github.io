@@ -35,3 +35,9 @@ columns.forEach((column) => {
     .setTween(absorb)
     .addTo(controller);
 });
+
+const navButton = document.querySelector(".navbar-toggler");
+
+navButton.addEventListener("click", () => {
+  navButton.classList.toggle("toggle");
+});

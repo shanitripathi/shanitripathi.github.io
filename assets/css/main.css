@@ -43,6 +43,28 @@
   outline: none;
 }
 
+.navbar-toggler {
+  background-color: black !important;
+}
+.navbar-toggler span {
+  display: none;
+}
+.navbar-toggler .line {
+  background-color: white;
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  transition: all 500ms ease;
+}
+
+.toggle .line1 {
+  transform: rotate(45deg) translate(0, 5px);
+}
+
+.toggle .line2 {
+  transform: rotate(-45deg) translate(0, -5px);
+}
+
 .gallery-col {
   margin-top: 100px;
 }

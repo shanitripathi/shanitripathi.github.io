@@ -1,11 +1,12 @@
 body {
   margin: 0;
+  background-color: cornflowerblue;
 }
 
 .wrapper {
-  height: 100vh;
+  height: 60vh;
   width: 100vw;
-  background-color: cornflowerblue;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,4 +26,22 @@ body {
   color: coral;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+button {
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 10%;
+  margin: 10px;
+  outline: none;
+  font-size: 3rem;
+}
+
+.para {
+  padding: 50px;
+  background-color: white;
+  font-size: 4rem;
+  color: black;
+  text-align: center;
 }

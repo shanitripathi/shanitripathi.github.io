@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      .content {
+        flex-grow: 1;
+        justify-content: space-between;
+        display: flex;
+      }
+
+      .sidebar {
+        background-color: green;
+        width: 15vw;
+      }
+
+      .button {
+        align-self: center;
+        font-size: xx-large;
+      }
+
+      .header {
+        height: 15%;
+        background-color: red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 5rem;
+        color: white;
+      }
+
+      .footer {
+        height: 15%;
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="link">Link 1</div>
+      <div class="link">Link 2</div>
+      <div class="link">Link 3</div>
+    </div>
+    <div class="content">
+      <div class="sidebar left"></div>
+      <button class="button">Reverse</button>
+      <div class="sidebar right"></div>
+    </div>
+    <div class="footer"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js" defer></script>
+  </body>
+</html>

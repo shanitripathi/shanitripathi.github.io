@@ -27,7 +27,7 @@
   position: absolute;
   top: 0;
   left: 50%; */
-  transform: translate(-50%, -100%);
+  /* transform: translate(-50%, -100%); */
   /* font-size: 1.3rem;
   text-align: center;
   width: 150px;
@@ -51,12 +51,3 @@ body {
 }  */
 
 
-.image{
- height:40px !important;
- width:10px;
-
-}
-
-.main{
-  background-color:red;
-}

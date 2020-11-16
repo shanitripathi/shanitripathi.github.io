@@ -2,6 +2,7 @@ var names = ["shani", "tania", "amy", "lee"];
 
 const wrapper = document.querySelector(".wrapper");
 const para = document.querySelector(".para");
+para.style.opacity = 0;
 
 const printName = (e) => {
   const filter = names.filter((name) => {
@@ -12,7 +13,11 @@ const printName = (e) => {
   names = names.filter((name) => {
     return chosen !== name;
   });
-  para.innerText = `you are the secret santa of ${chosen}`;
+  para.innerText = `you are the secret santa of ${chosen.toUpperCase()}`;
+  para.style.opacity = 1;
+  setTimeout(function () {
+    para.style.opacity = 0;
+  }, 2000);
 };
 
 const buttons = document.querySelectorAll("button");
