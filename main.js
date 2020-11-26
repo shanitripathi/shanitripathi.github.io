@@ -17,19 +17,22 @@ animateHeader();
 
 const columns = document.querySelectorAll(".columns");
 const controller = new ScrollMagic.Controller();
-
+const absorb = gsap.timeline({
+  defaults: {
+    duration: 0.5,
+  },
+});
 columns.forEach((column) => {
-  const absorb = gsap.timeline();
   absorb.fromTo(
     column,
-    { opacity: 0.4, y: "50%", scale: 0.5 },
+    { opacity: 0, y: "10%", scale: 0.3 },
     { opacity: 1, y: "0", scale: 1 }
   );
 
   absorbScene = new ScrollMagic.Scene({
     triggerElement: column,
     triggerHook: 1,
-    reverse: true,
+    reverse: false,
   })
 
     .setTween(absorb)

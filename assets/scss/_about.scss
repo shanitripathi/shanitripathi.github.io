@@ -3,8 +3,6 @@
   .image-col {
     text-align: center;
     .front-img {
-      height: 95%;
-      width: 80%;
       object-fit: cover;
       object-position: top;
     }
@@ -80,5 +78,25 @@
     object-fit: cover;
     object-position: top;
     border-radius: 50%;
+  }
+}
+
+.image-col {
+  .pic-container {
+    height: 95%;
+    width: 75%;
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    border-radius: 10px;
+    background-color: black;
+    transition: transform 500ms ease;
+    img {
+      height: 100%;
+      width: 100%;
+      border: 5px solid#f0fff0;
+    }
+  }
+  .pic-container:hover {
+    transform: rotate(-5deg);
   }
 }

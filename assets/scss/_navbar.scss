@@ -26,6 +26,7 @@
       z-index: 0;
       bottom: 0;
       height: 4px;
+      transition: height 300ms ease-in-out;
     }
     .nav-link:hover {
       color: black !important;
@@ -34,8 +35,6 @@
     .nav-link:hover::before {
       height: 100% !important;
       z-index: -1;
-      transition: 300ms ease-in-out;
-      transition-property: all;
     }
     .navbar-toggler {
       background-color: white;

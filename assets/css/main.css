@@ -27,6 +27,7 @@
   z-index: 0;
   bottom: 0;
   height: 4px;
+  transition: height 300ms ease-in-out;
 }
 .navbar-section .navbar .nav-link:hover {
   color: black !important;
@@ -35,8 +36,6 @@
 .navbar-section .navbar .nav-link:hover::before {
   height: 100% !important;
   z-index: -1;
-  transition: 300ms ease-in-out;
-  transition-property: all;
 }
 .navbar-section .navbar .navbar-toggler {
   background-color: white;
@@ -119,11 +118,10 @@
 }
 
 footer {
-  position: sticky;
-  margin-top: 100px;
   background-color: black;
   bottom: 0;
   width: 100%;
+  position: fixed;
 }
 footer .container {
   text-align: center;
@@ -145,8 +143,6 @@ footer .container span {
   text-align: center;
 }
 .about-container .image-col .front-img {
-  height: 95%;
-  width: 80%;
   object-fit: cover;
   object-position: top;
 }
@@ -212,12 +208,30 @@ footer .container span {
   border-radius: 50%;
 }
 
+.image-col .pic-container {
+  height: 95%;
+  width: 75%;
+  margin: auto;
+  padding: 20px 10px 20px 10px;
+  border-radius: 10px;
+  background-color: black;
+  transition: transform 500ms ease;
+}
+.image-col .pic-container img {
+  height: 100%;
+  width: 100%;
+  border: 5px solid #f0fff0;
+}
+.image-col .pic-container:hover {
+  transform: rotate(-5deg);
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
   user-select: none;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 body a:hover {
