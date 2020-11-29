@@ -133,7 +133,7 @@ footer .container span {
 }
 
 .project-container {
-  margin-bottom: 300px;
+  margin-bottom: 125px;
 }
 
 .about-container {
@@ -181,7 +181,7 @@ footer .container span {
   justify-content: space-between;
 }
 .references .links div a {
-  color: black;
+  color: white !important;
   text-decoration: none;
 }
 .references .skills div {
@@ -214,13 +214,14 @@ footer .container span {
   margin: auto;
   padding: 20px 10px 20px 10px;
   border-radius: 10px;
-  background-color: black;
+  background-color: white;
   transition: transform 500ms ease;
 }
 .image-col .pic-container img {
   height: 100%;
   width: 100%;
-  border: 5px solid #f0fff0;
+  border: 5px solid black;
+  border-radius: 10px;
 }
 .image-col .pic-container:hover {
   transform: rotate(-5deg);
@@ -233,6 +234,8 @@ body {
   user-select: none;
   height: 100%;
   position: relative;
+  background-color: black;
+  color: white;
 }
 body a:hover {
   color: brown !important;

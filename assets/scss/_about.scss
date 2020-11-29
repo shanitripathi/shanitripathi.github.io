@@ -43,7 +43,7 @@
       flex-direction: column;
       justify-content: space-between;
       a {
-        color: black;
+        color: white !important;
         text-decoration: none;
       }
     }
@@ -88,12 +88,13 @@
     margin: auto;
     padding: 20px 10px 20px 10px;
     border-radius: 10px;
-    background-color: black;
+    background-color: white;
     transition: transform 500ms ease;
     img {
       height: 100%;
       width: 100%;
-      border: 5px solid#f0fff0;
+      border: 5px solid black;
+      border-radius: 10px;
     }
   }
   .pic-container:hover {
