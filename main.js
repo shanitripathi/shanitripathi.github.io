@@ -44,5 +44,19 @@ const navButton = document.querySelector(".navbar-toggler");
 
 navButton.addEventListener("click", () => {
   navButton.classList.toggle("toggle");
-  console.log("running");
 });
+
+// barba.init({
+//   transitions: [
+//     {
+//       leave({ current, next }) {
+//         const t1 = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+//         t1.fromTo(current.container, 1, { opacity: 1 }, { opacity: 0 });
+//       },
+//       enter({ current, next }) {
+//         const t1 = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+//         t1.fromTo(next.container, 1, { opacity: 0 }, { opacity: 1 });
+//       },
+//     },
+//   ],
+// });
