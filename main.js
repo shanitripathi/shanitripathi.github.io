@@ -1,4 +1,4 @@
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname !== "/project.html") {
   const headerName = document.querySelector(".header-name");
 
   const text = "Hi, I am Shani!";
@@ -39,18 +39,10 @@ if (window.location.pathname === "/index.html") {
       .setTween(absorb)
       .addTo(controller);
   });
-
-  const navButton = document.querySelector(".navbar-toggler");
-
-  navButton.addEventListener("click", () => {
-    navButton.classList.toggle("toggle");
-    console.log("running");
-  });
-} else {
-  const navButton = document.querySelector(".navbar-toggler");
-
-  navButton.addEventListener("click", () => {
-    navButton.classList.toggle("toggle");
-    console.log("running");
-  });
 }
+const navButton = document.querySelector(".navbar-toggler");
+
+navButton.addEventListener("click", () => {
+  navButton.classList.toggle("toggle");
+  console.log("running");
+});
