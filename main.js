@@ -39,7 +39,22 @@ if (window.location.pathname !== "/project.html") {
       .setTween(absorb)
       .addTo(controller);
   });
-}
+//   function pageAnimation() {
+//     const imageCol = document.querySelector(".image-col");
+//     const paraCol = document.querySelector(".para-col");
+//     const navbarContainer = document.querySelector(".navbar-container");
+//     console.log(imageCol);
+//     const pageTl = gsap.timeline({
+//       defaults: { duration: 1, ease: "easeOut" },
+//     });
+
+//     pageTl
+//       .fromTo(imageCol, { x: "-200%" }, { x: "0%" })
+//       .fromTo(paraCol, { x: "200%" }, { x: "0%" })
+//       .fromTo(navbarContainer, { y: "-150%" }, { y: "0%" });
+//   }
+// }
+// pageAnimation();
 const navButton = document.querySelector(".navbar-toggler");
 
 navButton.addEventListener("click", () => {

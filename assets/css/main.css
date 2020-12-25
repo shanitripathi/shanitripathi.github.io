@@ -242,4 +242,8 @@ body a:hover {
   transition: 300ms ease-in-out;
 }
 
+.capture {
+  object-position: left;
+}
+
 /*# sourceMappingURL=main.css.map */

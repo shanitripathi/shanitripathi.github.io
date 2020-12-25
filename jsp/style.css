@@ -27,12 +27,12 @@
   position: absolute;
   top: 0;
   left: 50%; */
-  /* transform: translate(-50%, -100%); */
-  /* font-size: 1.3rem;
+/* transform: translate(-50%, -100%); */
+/* font-size: 1.3rem;
   text-align: center;
   width: 150px;
   transition: 2.5s all ease-in; */
-}
+/* } */
 
 /* .box {
   height: 90px;
@@ -50,4 +50,22 @@ body {
   box-sizing: border-box;
 }  */
 
+.slider {
+  display: flex;
+  width: 200px;
+  overflow: hidden;
+  transition: width 1s;
+  clip-path: ellipse(200px 1000px at 0% 0%);
+}
 
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+}
+
+.active {
+  width: 200px;
+}

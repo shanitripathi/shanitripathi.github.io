@@ -48,21 +48,46 @@
 //     console.log(res);
 //   });
 
-const demo = new Promise((resolve, reject) => {
-  if (Math.random() < 0.5) {
-    resolve("You are above 50%");
-  } else {
-    reject(new Error("you are below 50%"));
-  }
-});
+// const demo = new Promise((resolve, reject) => {
+//   if (Math.random() < 0.5) {
+//     resolve("You are above 50%");
+//   } else {
+//     reject(new Error("you are below 50%"));
+//   }
+// });
 
-demo.then(function (res) {
-  console.log(res);
-});
-//   .catch((err) => {
-//     console.error(err);
-//     return demo;
+// demo.then(function (res) {
+//   console.log(res);
+// });
+
+// const res = fetch("https://jsonplaceholder.typicode.com/posts");
+// res
+//   .then((res) => {
+//     return res.json();
 //   })
 //   .then((res) => {
 //     console.log(res);
 //   });
+
+// async function kuch() {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+//   const data = await res.json();
+//   console.log(data);
+// }
+
+// kuch();
+
+// const button = document.querySelector(".slider button");
+// const slider = document.querySelector(".slider");
+
+// button.addEventListener("click", function () {
+//   button.parentElement.classList.toggle("active");
+// });
+
+// const pro = new Promise((resolve, reject) => {
+//   reject("i will reject");
+// });
+
+// pro.then((res) => {
+//   console.log(res);
+// });
