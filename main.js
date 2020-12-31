@@ -1,4 +1,4 @@
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname === "/") {
   const headerName = document.querySelector(".header-name");
 
   const text = "Hi, I am Shani!";
