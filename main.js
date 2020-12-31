@@ -1,4 +1,4 @@
-if (window.location.pathname !== "/project.html") {
+if (window.location.pathname === "/index.html") {
   const headerName = document.querySelector(".header-name");
 
   const text = "Hi, I am Shani!";
@@ -36,6 +36,12 @@ if (window.location.pathname !== "/project.html") {
       .addTo(controller);
   });
 
+  const navButton = document.querySelector(".navbar-toggler");
+
+  navButton.addEventListener("click", () => {
+    navButton.classList.toggle("toggle");
+  });
+} else {
   const navButton = document.querySelector(".navbar-toggler");
 
   navButton.addEventListener("click", () => {
