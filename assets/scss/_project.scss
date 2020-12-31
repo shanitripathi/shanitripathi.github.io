@@ -2,8 +2,8 @@
   margin-top: 100px;
   .gallery {
     display: flex;
-    justify-content: center;
-
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     .first-image {
       height: 400px;

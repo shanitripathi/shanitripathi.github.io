@@ -69,7 +69,8 @@
 }
 .gallery-col .gallery {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
 }
 .gallery-col .gallery .first-image {
@@ -240,10 +241,6 @@ body {
 body a:hover {
   color: brown !important;
   transition: 300ms ease-in-out;
-}
-
-.capture {
-  object-position: left;
 }
 
 /*# sourceMappingURL=main.css.map */
