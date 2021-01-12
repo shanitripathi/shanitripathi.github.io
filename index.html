@@ -16,8 +16,18 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- <link
+      href="//db.onlinewebfonts.com/c/0a086e32e41c5e5960b26626757f07f3?family=Apercu"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -78,7 +88,7 @@
             <p>
               I'm a Front-end developer based in Dublin with a strong
               educational background in Computer Science. I started creating web
-              designs using HTML and CSS this year and since then I never looked
+              designs using HTML and CSS last year and since then I never looked
               back. I love to learn new things every day and keep up with the
               new technologies. Apart from that, I share a keen interest in
               Photography which helps me to stay in the creative block. You can
@@ -91,20 +101,16 @@
     <section class="references-section">
       <div class="container references mt-5 mb-5">
         <div class="row">
-          <div
-            class="col-12 col-md-4 Qualification mb-5 text-left text-md-center columns"
-          >
+          <div class="col-12 col-md-4 Qualification mb-5 text-center columns">
             <h5 class="skill-name">Qualification</h5>
-            <div>
+            <div class="skill-card">
               <p>Msc. in Data Analytics</p>
               <p>B.Tech in Computer Science</p>
             </div>
           </div>
-          <div
-            class="col-12 col-md-4 links mb-5 text-left text-md-center columns"
-          >
+          <div class="col-12 col-md-4 links mb-5 text-center columns">
             <h5 class="skill-name">Find me on</h5>
-            <div>
+            <div class="skill-card">
               <a href="https://github.com/shanitripathi">Github</a>
               <a href="https://www.linkedin.com/in/shani-tripathi-a6b94717b/"
                 >Linkedin</a
@@ -115,20 +121,20 @@
               >
             </div>
           </div>
-          <div class="col-12 col-md-4 skills text-left text-md-center columns">
+          <div class="col-12 col-md-4 skills text-center columns">
             <h5 class="skill-name">Field of Expertise</h5>
-            <div>
-              <p>UX Design</p>
-              <p>HTML/CSS</p>
-              <p>JavaScript</p>
-              <p>jQuery</p>
-              <p>ReactJs</p>
-              <p>GIT</p>
-              <p>SASS</p>
-              <p>Bootstrap</p>
-              <p>Python</p>
-              <p>SQL</p>
-              <p>Photoshop</p>
+            <div class="skill-card">
+              <p>#UX Design</p>
+              <p>#HTML/CSS</p>
+              <p>#JavaScript</p>
+              <p>#jQuery</p>
+              <p>#ReactJs</p>
+              <p>#GIT</p>
+              <p>#SASS</p>
+              <p>#Bootstrap</p>
+              <p>#Python</p>
+              <p>#SQL</p>
+              <p>#Photoshop</p>
             </div>
           </div>
         </div>
@@ -139,6 +145,25 @@
         <span>SHANI.TRIPATHI01@GMAIL.COM</span>
       </div>
     </footer>
+    <!-- contact us form -->
+    <!-- <div class="contact-wrapper">
+      <div class="container contact-container">
+        <div class="col-12">
+          <div class="contact-div">
+            <h1>Contact Me!</h1>
+            <form method="POST" class="form">
+              <input placeholder="Name" type="text" class="name-input" />
+              <input placeholder="Email" type="email" class="email-input" />
+              <textarea
+                placeholder="Your Message!"
+                class="message-input"
+              ></textarea>
+              <button class="btn-send btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -178,6 +203,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-    <script src="/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

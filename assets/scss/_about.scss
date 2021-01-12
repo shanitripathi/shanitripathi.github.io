@@ -41,10 +41,13 @@
     div {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+
       a {
         color: white !important;
         text-decoration: none;
+        &:hover {
+          color: yellow !important;
+        }
       }
     }
   }
@@ -52,7 +55,7 @@
     div {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+
       p {
         margin-bottom: 0.2rem;
       }
@@ -86,18 +89,27 @@
     height: 95%;
     width: 75%;
     margin: auto;
-    padding: 20px 10px 20px 10px;
+    padding: 10px;
     border-radius: 10px;
     background-color: white;
     transition: transform 500ms ease;
     img {
       height: 100%;
       width: 100%;
-      border: 5px solid black;
+      border: 5px solid #16161d;
       border-radius: 10px;
     }
   }
   .pic-container:hover {
     transform: rotate(-5deg);
   }
+}
+
+.skill-card {
+  background-color: #16161d;
+  border-radius: 10px;
+  height: 350px;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
