@@ -68,8 +68,8 @@ footer {
       text-decoration: none;
       color: white;
       position: relative;
-
-      &:hover:after {
+      z-index: 20;
+      &::after {
         content: "Send an Email";
         background-color: white;
         color: black;
@@ -83,6 +83,11 @@ footer {
         position: absolute;
         left: 0;
         bottom: 110%;
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+      }
+      &:hover:after {
+        opacity: 1;
       }
     }
   }

@@ -143,8 +143,9 @@ footer .container a {
   text-decoration: none;
   color: white;
   position: relative;
+  z-index: 20;
 }
-footer .container a:hover:after {
+footer .container a::after {
   content: "Send an Email";
   background-color: white;
   color: black;
@@ -158,6 +159,11 @@ footer .container a:hover:after {
   position: absolute;
   left: 0;
   bottom: 110%;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+footer .container a:hover:after {
+  opacity: 1;
 }
 
 .project-container {
