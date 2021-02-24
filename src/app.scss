@@ -1,0 +1,21 @@
+@import "settings";
+@import "./components/Navbar/navbar";
+@import "./pages/Home/Home";
+@import "./components/Project/project";
+@import "./pages/Projects/projects";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inconsolata", monospace;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  color: $primary-color;
+}

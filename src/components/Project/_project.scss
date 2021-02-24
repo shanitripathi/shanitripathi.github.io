@@ -1,0 +1,41 @@
+.project {
+  margin-bottom: 50px;
+}
+.project-wrapper {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: "View Project";
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: translate(-100%, 0);
+    transition: all 300ms ease-in-out;
+    background-color: $primary-color;
+  }
+  &:hover::after {
+    transform: translate(0, 0);
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid $primary-color;
+}
+
+.project-link {
+  background-color: red;
+  z-index: 2;
+}
