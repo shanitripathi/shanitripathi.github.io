@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.30e8bc09.chunk.css",
+    "main.js": "/static/js/main.e7e872e0.chunk.js",
+    "main.js.map": "/static/js/main.e7e872e0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d0605945.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
+    "static/js/2.686b9625.chunk.js": "/static/js/2.686b9625.chunk.js",
+    "static/js/2.686b9625.chunk.js.map": "/static/js/2.686b9625.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.30e8bc09.chunk.css.map": "/static/css/main.30e8bc09.chunk.css.map",
+    "static/js/2.686b9625.chunk.js.LICENSE.txt": "/static/js/2.686b9625.chunk.js.LICENSE.txt",
+    "static/media/Agency.e72acae7.png": "/static/media/Agency.e72acae7.png",
+    "static/media/Days.e895e921.png": "/static/media/Days.e895e921.png",
+    "static/media/Eight-Gates.c20fcdf9.png": "/static/media/Eight-Gates.c20fcdf9.png",
+    "static/media/Hospital.9a1d3c86.png": "/static/media/Hospital.9a1d3c86.png",
+    "static/media/Media.e0766ace.png": "/static/media/Media.e0766ace.png",
+    "static/media/Ruben.ca6ce36b.png": "/static/media/Ruben.ca6ce36b.png",
+    "static/media/coverSmall.9e184815.jpg": "/static/media/coverSmall.9e184815.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0605945.js",
+    "static/js/2.686b9625.chunk.js",
+    "static/css/main.30e8bc09.chunk.css",
+    "static/js/main.e7e872e0.chunk.js"
+  ]
+}
